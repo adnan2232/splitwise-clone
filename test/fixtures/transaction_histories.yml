@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   through: MyString
+#   paid: 9.99
+#   notes: MyString
+#   lender: one
+#   borrower: one
+
+# two:
+#   through: MyString
+#   paid: 9.99
+#   notes: MyString
+#   lender: two
+#   borrower: two

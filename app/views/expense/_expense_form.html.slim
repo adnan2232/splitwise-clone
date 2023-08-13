@@ -1,0 +1,33 @@
+
+.d-flex.flex-column.m-2.p-2.align-items-center
+    =form_with(model: @expense,url: :expense_index,local: true,id: "expense-form") do |form|
+        .d-flex.flex-row.p-2.mb-2
+            .p-2
+                =form.label :description,"Description: "
+            =form.text_field :description, placeholder: "Enter a description"
+
+
+        .d-flex.flex-row.p-2.mb-2
+            .p-2
+                =form.label :amount
+            =form.number_field :amount, :step=>0.01,placeholder: 0.00, :required=>true
+
+        .d-flex.flex-row.p-2.mb-2
+            .p-2
+                =form.label :incurred_by_id
+            =form.collection_select :incurred_by_id, User.all, :id, :email
+
+        .d-flex.flex-row.p-2.mb-2
+            .p-2
+                =form.label :exp_date, "Date"
+            =form.date_field :exp_date
+
+        #borrowers
+            =form.fields_for :borrowers do|borr_form|
+                =render "expense/borrower_fields", f:borr_form
+            .links.d-flex.flex-row.justify-content-between
+                =link_to_add_association 'Add ower',form,:borrowers
+                a.text-secondary.p-1#dist-equal-btn role="button" Distribute Equally
+
+        / button.btn.btn-outline-secondary.p-2.d-flex.justify-content-end.align-items-center.divide-equally
+

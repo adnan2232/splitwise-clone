@@ -1,0 +1,9 @@
+aside.side-bar-area
+    .friends-list
+      p.friends-list-header FRIENDS
+      .friend-name
+        =link_to "YOU",:root,{class: "text-decoration-none text-dark"}
+      - friends.each do |friend|
+        .friend-name
+          = link_to friend.email,{action: "person", id: friend.id},{class: "text-decoration-none text-dark"}
+      

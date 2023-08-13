@@ -8,4 +8,5 @@ h1.h3.mb-3.fw-normal Please sign in
       = f.input :password, input_html: { autocomplete: 'off', class: 'form-control', id: 'floatingPassword' }, label: false, wrapper: false
       label for="floatingPassword" Password
 
-    = f.button :button, "Log in", class: "w-100 btn btn-lg btn-primary", data: {class_name: 'ulsa-login-form', button_name: "Log in"}
+    = f.button :button, "Log in", class: "w-100 btn btn-lg btn-primary mb-4", data: {class_name: 'ulsa-login-form', button_name: "Log in"}
+    =link_to "Sign Up", :new_user_registration ,class:"text-secondary"

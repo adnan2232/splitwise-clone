@@ -1,0 +1,30 @@
+.nested-fields
+    h4.m-3 Expense History
+    .expenses-list
+        - expenses.each do|exp|
+            .expense-item
+                .item-lhs
+                    p 
+                        =exp["expense_date"].to_time.strftime("%b %d")
+                    p 
+                        =(exp["description"]=="")? "No description" : exp["description"]
+                .item-rhs
+                    .you-details
+                        p
+                            = (exp["lender_id"]==current_user.id)? "you paid" : "#{exp['lender_email']} paid"
+                        p 
+                            ="$"+exp["paid"].to_s
+                    .you-details
+                        
+                        p 
+                            -if (exp["lender_id"]==current_user.id||exp["borrower_id"]==current_user.id) 
+                                -if exp["through"]=="EXP"
+                                    = (exp["lender_id"]==current_user.id)? "you lent #{exp['borrower_email']}" : +"#{exp['lender_email']} lent you"
+                                -else
+                                    = (exp["lender_id"]==current_user.id)? "to #{exp['borrower_email']}" : "to you"
+                            -else 
+                                =(exp["through"]=="EXP")? "#{exp['lender_email']} lent #{exp['borrower_email']}": "to #{exp['borrower_email']}"
+
+                        p 
+                            =(exp["through"]=="EXP")? "$"+exp["lended"].to_s : "Through Settle"
+                   

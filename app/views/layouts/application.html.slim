@@ -14,5 +14,36 @@ html
     main.flex-shrink-0
       .container
         = yield
+    javascript: 
+      const split_equally = ()=>{
+        const amount = $("#expense_amount").val() || 0;
+        const amounts_divided = $("#borrowers").find(".expense-borrowers-amount");
+        if(amounts_divided.length==0){
+          alert("Please add ower to divide the amount");
+          return
+        }
+        amounts_divided.children().val((amount/amounts_divided.length).toFixed(2));
+      }
 
+      $(document).on('turbolinks:load',()=>{
+        
+        $('.expense-load-btn').on('click',()=>{
+          $.ajax({
+            url: '/expense/new',
+            dataType:'html',
+            success: (response)=>{
+              $('#expense-form-container').html(response);
+              $('#dist-equal-btn').on('click',split_equally);
+            }
+          })
+        });
+
+        $('.min-balance-field').each(function(){
+          /Set minimum value to pay nears to number corresponding decimal place/
+          const min_balance= (parseFloat($(this).attr('data-min-balance'))%1).toFixed(2);
+          
+          $(this).attr('min',(min_balance==0)? 1 : min_balance);
+          $(this).attr('max',parseFloat($(this).attr('data-min-balance')));
+        })
+      })
 = render 'layouts/jgrowl_notifications'

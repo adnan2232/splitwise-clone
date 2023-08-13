@@ -1,0 +1,228 @@
+/* Custom dashboard styles */
+/* line 6, app/assets/stylesheets/static.scss */
+.dashboard-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: 16px auto 0;
+}
+
+/* line 14, app/assets/stylesheets/static.scss */
+.dashboard-wrapper .side-bar-area {
+  width: 180px;
+}
+
+/* line 18, app/assets/stylesheets/static.scss */
+.friends-list .friends-list-header {
+  background: #f6f6f6;
+  color: #ccc;
+  font-size: 12px;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 4px;
+  padding: 5px;
+}
+
+/* line 28, app/assets/stylesheets/static.scss */
+.friends-list .friend-name {
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 3px 8px 2px 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+/* line 41, app/assets/stylesheets/static.scss */
+.friends-list .friend-name:hover {
+  background: #eee;
+}
+
+/* line 45, app/assets/stylesheets/static.scss */
+.dashboard-wrapper .main-area {
+  width: calc(100% - 104px);
+  border: 1px solid #ccc;
+  min-height: 100%;
+  margin-left: 24px;
+  box-shadow: 0 0 12px;
+}
+
+/* line 53, app/assets/stylesheets/static.scss */
+.main-area .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 62, app/assets/stylesheets/static.scss */
+.top-bar .top-bar-title {
+  font-size: 24px;
+  line-height: 38px;
+  color: #333;
+}
+
+/* line 68, app/assets/stylesheets/static.scss */
+.top-bar-actions button:nth-child(1) {
+  margin-right: 8px;
+}
+
+/* line 72, app/assets/stylesheets/static.scss */
+.dashboard-balances .balances-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 16px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  color: #999;
+}
+
+/* line 81, app/assets/stylesheets/static.scss */
+.balances-bar .balance-block {
+  text-align: center;
+}
+
+/* line 85, app/assets/stylesheets/static.scss */
+.balance-block p {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+/* line 91, app/assets/stylesheets/static.scss */
+.dashboard-balances .dashboard-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  padding: 16px;
+}
+
+/* line 98, app/assets/stylesheets/static.scss */
+.dashboard-detail .detail-block:nth-child(1) {
+  border-right: 1px solid #ddd;
+}
+
+/* line 102, app/assets/stylesheets/static.scss */
+.detail-block .detail-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* line 108, app/assets/stylesheets/static.scss */
+.detail-block .user-detail {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+/* line 116, app/assets/stylesheets/static.scss */
+.user-detail .user-img {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 121, app/assets/stylesheets/static.scss */
+.user-detail .user-info p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 126, app/assets/stylesheets/static.scss */
+.user-detail .user-info p:nth-child(2) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 131, app/assets/stylesheets/static.scss */
+.expenses-list .expense-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  transition: all .2s  linear;
+}
+
+/* line 139, app/assets/stylesheets/static.scss */
+.expenses-list .expense-item:hover {
+  background: #f8f8f8;
+}
+
+/* line 143, app/assets/stylesheets/static.scss */
+.expense-item:hover .remove-btn {
+  display: block;
+}
+
+/* line 147, app/assets/stylesheets/static.scss */
+.remove-btn {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  display: none;
+  font-size: 12px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* line 158, app/assets/stylesheets/static.scss */
+.expense-item .item-lhs {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 163, app/assets/stylesheets/static.scss */
+.item-lhs p:nth-child(1) {
+  font-size: 10px;
+  color: #999;
+  margin: 0;
+}
+
+/* line 169, app/assets/stylesheets/static.scss */
+.item-lhs p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0 8px;
+}
+
+/* line 175, app/assets/stylesheets/static.scss */
+.expense-item .item-rhs {
+  display: inline-flex;
+  padding-right: 24px;
+}
+
+/* line 180, app/assets/stylesheets/static.scss */
+.item-rhs .you-details {
+  text-align: center;
+}
+
+/* line 184, app/assets/stylesheets/static.scss */
+.item-rhs .you-details:nth-child(2) {
+  margin-left: 24px;
+}
+
+/* line 188, app/assets/stylesheets/static.scss */
+.you-details p:nth-child(1) {
+  font-size: 12px;
+  line-height: 15px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* line 195, app/assets/stylesheets/static.scss */
+.you-details p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Custom dashboard styles ends */

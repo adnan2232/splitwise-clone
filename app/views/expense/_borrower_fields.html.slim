@@ -1,0 +1,17 @@
+.nested-fields
+
+    .d-flex.flex-row.mb-2.p-2
+        .p-2
+            =f.label :borrower_id, "Select share ower"
+        =f.collection_select :borrower_id, User.all,:id,:email,{class:'p-2'}
+    
+    .d-flex.flex-row.mb-2.p-2
+        .p-2.d-flex.flex-row.mb-2.p-2
+            =f.label :amount, "Enter share amount"
+            .expense-borrowers-amount
+                =f.number_field :amount, :step=>0.01, placeholder: 0.00, :required=>true
+
+    .d-flex.flex-row.mb-2.justify-content-end
+        =link_to_remove_association "Delete ower",f,class:"text-danger"
+
+    

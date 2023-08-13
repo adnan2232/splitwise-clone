@@ -1,0 +1,27 @@
+.dashboard-wrapper
+
+    .main-area
+        .top-bar
+            h1.top-bar-title Settle up 
+            .top-bar-actions
+                =link_to "Back to dashboard", :root , role:"button", class: "btn btn-primary"
+
+        .container.d-flex.flex-column
+            -@owes.each do|owe|
+                .d-flex.flex-row.justify-content-between.align-items-center 
+                    .d-flex.flex-column.align-items-center.justify-content-center
+                        p You owe 
+                        p 
+                            =owe.lender.email 
+                    
+                    =form_with url: update_users_account_path(owe.lender), html: {name: :users_account}, method: :put do |form|
+                        .d-flex.flex-column.align-items-center.justify-content-center  
+                            p.pt-3.fw-bold
+                                = "$#{owe.balance}"
+                            div.d-flex.flex-row.justify-content-between.p-2 style="gap:20px;"
+                                =form.text_field :notes, placeholder:"Enter short notes here", maxlength: 255, size:12
+                                =form.number_field :balance, :step=>0.01, placeholder:"Enter amount here", class:"min-balance-field",\
+                                data:{'min-balance': "#{owe.balance}"}
+                                =form.submit "Pay",class:"btn btn-success px-3"
+
+                        

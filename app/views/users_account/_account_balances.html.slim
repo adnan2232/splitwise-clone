@@ -1,0 +1,41 @@
+/ This template show total amount owes or lended by user (can be you or your friend)
+.nested-fields
+    .dashboard-balances
+        .balances-bar
+            .balance-block
+                p total balance
+                p 
+                    = user.total_balance>=0? '+ $' : '- $'
+                    = user.total_balance.abs
+            .balance-block
+                p ="#{alias_name} owe"
+                p
+                    | $
+                    = user.total_owe
+            .balance-block
+                p ="#{alias_name} are owed"
+                p="$ #{user.total_due}"
+        .dashboard-detail
+            .detail-block
+                h2.detail-title ="#{alias_name} owe"
+                - user.borrowed.each do |borrower|
+                    -if borrower.balance>0
+                        .user-detail
+                            img.user-img alt="profile" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" /
+                            .user-info
+                                p = (borrower.lender.id==current_user.id)? "you": borrower.lender.email
+                                p 
+                                    ="#{alias_name} owe $"
+                                    = borrower.balance
+
+            .detail-block
+                h2.detail-title ="#{alias_name} are owed"
+                - user.lended.each do |lender|
+                    - if lender.balance>0
+                        .user-detail
+                            img.user-img alt="profile" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" /
+                            .user-info
+                                p = (lender.borrower.id==current_user.id)? "you": lender.borrower.email
+                                p 
+                                    ="#{alias_name} are owed $"
+                                    =lender.balance
