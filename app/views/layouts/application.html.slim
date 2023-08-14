@@ -15,7 +15,7 @@ html
       .container
         = yield
     javascript: 
-      const split_equally = ()=>{
+      function split_price_equally(){
         const amount = $("#expense_amount").val() || 0;
         const amounts_divided = $("#borrowers").find(".expense-borrowers-amount");
         if(amounts_divided.length==0){
@@ -33,7 +33,7 @@ html
             dataType:'html',
             success: (response)=>{
               $('#expense-form-container').html(response);
-              $('#dist-equal-btn').on('click',split_equally);
+              $('#dist-equal-btn').on('click',split_price_equally);
             }
           })
         });

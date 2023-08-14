@@ -18,3 +18,13 @@ test:
   username: <%= Rails.application.credentials.dig(:postgresql,:username)%>
   password: <%= Rails.application.credentials.dig(:postgresql,:password)%>
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  username: <%= Rails.application.credentials.dig(:postgresql,:username)%>
+  password: <%= Rails.application.credentials.dig(:postgresql,:password)%>
+  host: <%= Rails.application.credentials.dig(:postgresql,:host)%>
+  port: <%= Rails.application.credentials.dig(:postgresql,:port)%>
+  database: <%= Rails.application.credentials.dig(:postgresql,:database)%>
+  sslmode: <%= Rails.application.credentials.dig(:postgresql,:sslmode)%>
+  sslrootcert: <%= Rails.application.credentials.dig(:postgresql,:sslrootcert)%>

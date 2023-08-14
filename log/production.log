@@ -1809,3 +1809,873 @@ I, [2023-08-13T16:29:09.138387 #57320]  INFO -- : [a59a340b-3a46-4f28-88a5-3c13e
 F, [2023-08-13T16:29:09.138736 #57320] FATAL -- : [a59a340b-3a46-4f28-88a5-3c13e81d63af]   
 [a59a340b-3a46-4f28-88a5-3c13e81d63af] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
 [a59a340b-3a46-4f28-88a5-3c13e81d63af]   
+I, [2023-08-14T11:08:56.037541 #31826]  INFO -- : Migrating to DeviseCreateUsers (20210928010715)
+I, [2023-08-14T11:08:56.248944 #31826]  INFO -- : Migrating to AddBasicFieldToUser (20211006083940)
+I, [2023-08-14T11:08:56.349528 #31826]  INFO -- : Migrating to CreateExpenses (20230809091953)
+I, [2023-08-14T11:08:56.478481 #31826]  INFO -- : Migrating to CreateLendBorrows (20230809104108)
+I, [2023-08-14T11:08:56.630784 #31826]  INFO -- : Migrating to LendBorrowToExpenseBorrower (20230810054010)
+I, [2023-08-14T11:08:56.913854 #31826]  INFO -- : Migrating to CreateUsersAccounts (20230810061058)
+I, [2023-08-14T11:08:57.071499 #31826]  INFO -- : Migrating to ExpenseChangeNullFields (20230811113841)
+I, [2023-08-14T11:08:57.253145 #31826]  INFO -- : Migrating to CreateTransactionHistories (20230811144530)
+I, [2023-08-14T11:08:57.419034 #31826]  INFO -- : Migrating to ExpDateTextToDate (20230812071321)
+I, [2023-08-14T11:09:32.229697 #31939]  INFO -- : [0182f869-ae5f-4fc5-9f57-6b9154b2ac8d] Started GET "/" for 127.0.0.1 at 2023-08-14 11:09:32 +0530
+I, [2023-08-14T11:09:32.231697 #31939]  INFO -- : [0182f869-ae5f-4fc5-9f57-6b9154b2ac8d] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:09:32.235635 #31939]  INFO -- : [0182f869-ae5f-4fc5-9f57-6b9154b2ac8d] Completed 401 Unauthorized in 4ms (Allocations: 472)
+I, [2023-08-14T11:09:32.258599 #31939]  INFO -- : [748c3596-5f41-437e-920f-70454270f98a] Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-14 11:09:32 +0530
+I, [2023-08-14T11:09:32.259334 #31939]  INFO -- : [748c3596-5f41-437e-920f-70454270f98a] Processing by Devise::SessionsController#new as HTML
+I, [2023-08-14T11:09:32.975727 #31939]  INFO -- : [748c3596-5f41-437e-920f-70454270f98a]   Rendered devise/sessions/new.html.slim within layouts/application (Duration: 10.7ms | Allocations: 16831)
+I, [2023-08-14T11:09:32.981127 #31939]  INFO -- : [748c3596-5f41-437e-920f-70454270f98a]   Rendered layout layouts/application.html.slim (Duration: 16.1ms | Allocations: 28263)
+I, [2023-08-14T11:09:32.981349 #31939]  INFO -- : [748c3596-5f41-437e-920f-70454270f98a] Completed 200 OK in 722ms (Views: 17.8ms | ActiveRecord: 386.3ms | Allocations: 39994)
+I, [2023-08-14T11:09:32.990591 #31939]  INFO -- : [1263be1b-6cb8-4c95-ad1d-04521380bbb9] Started GET "/assets/application-713cc9a3adcf394cb1e90cc48b4f612de35ba4992dce4ad2bc489d5d5ec06263.css" for 127.0.0.1 at 2023-08-14 11:09:32 +0530
+I, [2023-08-14T11:09:32.991230 #31939]  INFO -- : [d01bf300-f510-4b2f-a33d-b7cb18295af0] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:09:32 +0530
+F, [2023-08-14T11:09:32.991539 #31939] FATAL -- : [d01bf300-f510-4b2f-a33d-b7cb18295af0]   
+[d01bf300-f510-4b2f-a33d-b7cb18295af0] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[d01bf300-f510-4b2f-a33d-b7cb18295af0]   
+I, [2023-08-14T11:09:33.239694 #31939]  INFO -- : [ec3ba09d-dcf0-4b89-a4fe-4e87f6fffe70] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:09:33 +0530
+F, [2023-08-14T11:09:33.240085 #31939] FATAL -- : [ec3ba09d-dcf0-4b89-a4fe-4e87f6fffe70]   
+[ec3ba09d-dcf0-4b89-a4fe-4e87f6fffe70] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[ec3ba09d-dcf0-4b89-a4fe-4e87f6fffe70]   
+I, [2023-08-14T11:09:40.078977 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570] Started POST "/users/sign_in" for 127.0.0.1 at 2023-08-14 11:09:40 +0530
+I, [2023-08-14T11:09:40.079525 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570] Processing by Devise::SessionsController#create as HTML
+I, [2023-08-14T11:09:40.079561 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570]   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"at@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+I, [2023-08-14T11:09:40.205842 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570] Completed 401 Unauthorized in 126ms (ActiveRecord: 62.2ms | Allocations: 1802)
+I, [2023-08-14T11:09:40.206467 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570] Processing by Devise::SessionsController#new as HTML
+I, [2023-08-14T11:09:40.206501 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570]   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"at@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+I, [2023-08-14T11:09:40.400699 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570]   Rendered devise/sessions/new.html.slim within layouts/application (Duration: 0.9ms | Allocations: 891)
+I, [2023-08-14T11:09:40.401077 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570]   Rendered layout layouts/application.html.slim (Duration: 1.3ms | Allocations: 1211)
+I, [2023-08-14T11:09:40.401223 #31939]  INFO -- : [d983757f-fb06-43e4-8194-f426c0f61570] Completed 200 OK in 195ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 2356)
+I, [2023-08-14T11:09:40.411235 #31939]  INFO -- : [ebeeeaf0-66aa-4aa5-b9f7-0468fb344863] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:09:40 +0530
+F, [2023-08-14T11:09:40.411634 #31939] FATAL -- : [ebeeeaf0-66aa-4aa5-b9f7-0468fb344863]   
+[ebeeeaf0-66aa-4aa5-b9f7-0468fb344863] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[ebeeeaf0-66aa-4aa5-b9f7-0468fb344863]   
+I, [2023-08-14T11:09:41.611800 #31939]  INFO -- : [9d4b89da-ffe4-44a5-afa7-9a990ced4d05] Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-14 11:09:41 +0530
+I, [2023-08-14T11:09:41.612406 #31939]  INFO -- : [9d4b89da-ffe4-44a5-afa7-9a990ced4d05] Processing by Devise::RegistrationsController#new as HTML
+I, [2023-08-14T11:09:41.617458 #31939]  INFO -- : [9d4b89da-ffe4-44a5-afa7-9a990ced4d05]   Rendered devise/registrations/new.html.slim within layouts/application (Duration: 3.6ms | Allocations: 7165)
+I, [2023-08-14T11:09:41.617830 #31939]  INFO -- : [9d4b89da-ffe4-44a5-afa7-9a990ced4d05]   Rendered layout layouts/application.html.slim (Duration: 4.0ms | Allocations: 7554)
+I, [2023-08-14T11:09:41.617965 #31939]  INFO -- : [9d4b89da-ffe4-44a5-afa7-9a990ced4d05] Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 8925)
+I, [2023-08-14T11:09:41.625513 #31939]  INFO -- : [9cadf2d6-f130-4663-8cb1-5a4098c016e9] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:09:41 +0530
+F, [2023-08-14T11:09:41.625929 #31939] FATAL -- : [9cadf2d6-f130-4663-8cb1-5a4098c016e9]   
+[9cadf2d6-f130-4663-8cb1-5a4098c016e9] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[9cadf2d6-f130-4663-8cb1-5a4098c016e9]   
+I, [2023-08-14T11:09:53.339647 #31939]  INFO -- : [5be78962-b5ba-4f36-b86c-e4f2905abf26] Started POST "/users" for 127.0.0.1 at 2023-08-14 11:09:53 +0530
+I, [2023-08-14T11:09:53.340161 #31939]  INFO -- : [5be78962-b5ba-4f36-b86c-e4f2905abf26] Processing by Devise::RegistrationsController#create as HTML
+I, [2023-08-14T11:09:53.340190 #31939]  INFO -- : [5be78962-b5ba-4f36-b86c-e4f2905abf26]   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"at@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+I, [2023-08-14T11:09:53.691733 #31939]  INFO -- : [5be78962-b5ba-4f36-b86c-e4f2905abf26] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T11:09:53.691844 #31939]  INFO -- : [5be78962-b5ba-4f36-b86c-e4f2905abf26] Completed 302 Found in 352ms (ActiveRecord: 122.6ms | Allocations: 3654)
+I, [2023-08-14T11:09:53.694435 #31939]  INFO -- : [be8b46a2-1a62-44ff-84b0-277eecef355d] Started GET "/" for 127.0.0.1 at 2023-08-14 11:09:53 +0530
+I, [2023-08-14T11:09:53.694822 #31939]  INFO -- : [be8b46a2-1a62-44ff-84b0-277eecef355d] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:09:54.258158 #31939]  INFO -- : [be8b46a2-1a62-44ff-84b0-277eecef355d]   Rendered static/dashboard.html.slim within layouts/application (Duration: 365.9ms | Allocations: 36350)
+I, [2023-08-14T11:09:54.261158 #31939]  INFO -- : [be8b46a2-1a62-44ff-84b0-277eecef355d]   Rendered layout layouts/application.html.slim (Duration: 368.9ms | Allocations: 45103)
+I, [2023-08-14T11:09:54.261319 #31939]  INFO -- : [be8b46a2-1a62-44ff-84b0-277eecef355d] Completed 200 OK in 566ms (Views: 181.8ms | ActiveRecord: 284.9ms | Allocations: 46981)
+I, [2023-08-14T11:09:54.270228 #31939]  INFO -- : [0f1c3e2b-dc2a-4b6d-8a15-35917975503d] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:09:54 +0530
+F, [2023-08-14T11:09:54.270500 #31939] FATAL -- : [0f1c3e2b-dc2a-4b6d-8a15-35917975503d]   
+[0f1c3e2b-dc2a-4b6d-8a15-35917975503d] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[0f1c3e2b-dc2a-4b6d-8a15-35917975503d]   
+I, [2023-08-14T11:10:01.000797 #31939]  INFO -- : [f430e9ad-5055-4ca7-af4f-ac1cac3cd777] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:10:01 +0530
+F, [2023-08-14T11:10:01.001420 #31939] FATAL -- : [f430e9ad-5055-4ca7-af4f-ac1cac3cd777]   
+[f430e9ad-5055-4ca7-af4f-ac1cac3cd777] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[f430e9ad-5055-4ca7-af4f-ac1cac3cd777]   
+I, [2023-08-14T11:10:05.355490 #31939]  INFO -- : [77626120-3582-40d3-9565-db5d28cd120f] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:10:05 +0530
+F, [2023-08-14T11:10:05.355797 #31939] FATAL -- : [77626120-3582-40d3-9565-db5d28cd120f]   
+[77626120-3582-40d3-9565-db5d28cd120f] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[77626120-3582-40d3-9565-db5d28cd120f]   
+I, [2023-08-14T11:10:52.714264 #32515]  INFO -- : [cb665a61-62ea-487a-959b-2d695a0929a4] Started GET "/" for 127.0.0.1 at 2023-08-14 11:10:52 +0530
+I, [2023-08-14T11:10:52.715196 #32515]  INFO -- : [cb665a61-62ea-487a-959b-2d695a0929a4] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:10:53.145448 #32515]  INFO -- : [35f5da09-0137-4341-a46f-9d3d9a8780de] Started GET "/" for 127.0.0.1 at 2023-08-14 11:10:53 +0530
+I, [2023-08-14T11:10:53.145883 #32515]  INFO -- : [35f5da09-0137-4341-a46f-9d3d9a8780de] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:10:53.420298 #32515]  INFO -- : [d8f2f73b-0697-495d-a982-46660d38d40c] Started GET "/" for 127.0.0.1 at 2023-08-14 11:10:53 +0530
+I, [2023-08-14T11:10:53.420724 #32515]  INFO -- : [d8f2f73b-0697-495d-a982-46660d38d40c] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:10:53.581332 #32515]  INFO -- : [cb665a61-62ea-487a-959b-2d695a0929a4]   Rendered static/dashboard.html.slim within layouts/application (Duration: 251.3ms | Allocations: 48310)
+I, [2023-08-14T11:10:53.588180 #32515]  INFO -- : [cb665a61-62ea-487a-959b-2d695a0929a4]   Rendered layout layouts/application.html.slim (Duration: 258.2ms | Allocations: 68137)
+I, [2023-08-14T11:10:53.588457 #32515]  INFO -- : [cb665a61-62ea-487a-959b-2d695a0929a4] Completed 200 OK in 873ms (Views: 132.1ms | ActiveRecord: 485.2ms | Allocations: 81904)
+I, [2023-08-14T11:10:53.831525 #32515]  INFO -- : [35f5da09-0137-4341-a46f-9d3d9a8780de]   Rendered static/dashboard.html.slim within layouts/application (Duration: 196.8ms | Allocations: 4486)
+I, [2023-08-14T11:10:53.832052 #32515]  INFO -- : [35f5da09-0137-4341-a46f-9d3d9a8780de]   Rendered layout layouts/application.html.slim (Duration: 197.3ms | Allocations: 4918)
+I, [2023-08-14T11:10:53.832219 #32515]  INFO -- : [35f5da09-0137-4341-a46f-9d3d9a8780de] Completed 200 OK in 686ms (Views: 101.3ms | ActiveRecord: 342.6ms | Allocations: 83027)
+I, [2023-08-14T11:10:54.132963 #32515]  INFO -- : [d8f2f73b-0697-495d-a982-46660d38d40c]   Rendered static/dashboard.html.slim within layouts/application (Duration: 201.7ms | Allocations: 1665)
+I, [2023-08-14T11:10:54.133687 #32515]  INFO -- : [d8f2f73b-0697-495d-a982-46660d38d40c]   Rendered layout layouts/application.html.slim (Duration: 202.4ms | Allocations: 2097)
+I, [2023-08-14T11:10:54.133900 #32515]  INFO -- : [d8f2f73b-0697-495d-a982-46660d38d40c] Completed 200 OK in 713ms (Views: 102.6ms | ActiveRecord: 358.6ms | Allocations: 47670)
+I, [2023-08-14T11:10:54.144691 #32515]  INFO -- : [0d71e7bb-d277-4b95-bf12-a2b5426c8886] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:10:54 +0530
+F, [2023-08-14T11:10:54.145128 #32515] FATAL -- : [0d71e7bb-d277-4b95-bf12-a2b5426c8886]   
+[0d71e7bb-d277-4b95-bf12-a2b5426c8886] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[0d71e7bb-d277-4b95-bf12-a2b5426c8886]   
+I, [2023-08-14T11:10:54.289222 #32515]  INFO -- : [213e1bbc-3baa-4e98-8cca-7133bc38d4e9] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:10:54 +0530
+F, [2023-08-14T11:10:54.289508 #32515] FATAL -- : [213e1bbc-3baa-4e98-8cca-7133bc38d4e9]   
+[213e1bbc-3baa-4e98-8cca-7133bc38d4e9] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[213e1bbc-3baa-4e98-8cca-7133bc38d4e9]   
+I, [2023-08-14T11:15:38.384845 #33244]  INFO -- : [3555927f-df08-4307-82e0-76185561db91] Started GET "/" for 127.0.0.1 at 2023-08-14 11:15:38 +0530
+I, [2023-08-14T11:15:38.386608 #33244]  INFO -- : [3555927f-df08-4307-82e0-76185561db91] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:15:39.371424 #33244]  INFO -- : [3555927f-df08-4307-82e0-76185561db91]   Rendered static/dashboard.html.slim within layouts/application (Duration: 271.3ms | Allocations: 44161)
+I, [2023-08-14T11:15:39.377595 #33244]  INFO -- : [3555927f-df08-4307-82e0-76185561db91]   Rendered layout layouts/application.html.slim (Duration: 277.5ms | Allocations: 63988)
+I, [2023-08-14T11:15:39.377823 #33244]  INFO -- : [3555927f-df08-4307-82e0-76185561db91] Completed 200 OK in 991ms (Views: 138.9ms | ActiveRecord: 535.1ms | Allocations: 76803)
+I, [2023-08-14T11:15:39.387634 #33244]  INFO -- : [7ee83ea5-c6c0-47bb-b605-931af7bfa86a] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:15:39 +0530
+F, [2023-08-14T11:15:39.388076 #33244] FATAL -- : [7ee83ea5-c6c0-47bb-b605-931af7bfa86a]   
+[7ee83ea5-c6c0-47bb-b605-931af7bfa86a] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[7ee83ea5-c6c0-47bb-b605-931af7bfa86a]   
+I, [2023-08-14T11:15:40.302999 #33244]  INFO -- : [5795e40d-a8e4-45ca-8eeb-1a0da63f36a2] Started GET "/" for 127.0.0.1 at 2023-08-14 11:15:40 +0530
+I, [2023-08-14T11:15:40.303447 #33244]  INFO -- : [5795e40d-a8e4-45ca-8eeb-1a0da63f36a2] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:15:40.533828 #33244]  INFO -- : [5795e40d-a8e4-45ca-8eeb-1a0da63f36a2]   Rendered static/dashboard.html.slim within layouts/application (Duration: 130.6ms | Allocations: 1651)
+I, [2023-08-14T11:15:40.534479 #33244]  INFO -- : [5795e40d-a8e4-45ca-8eeb-1a0da63f36a2]   Rendered layout layouts/application.html.slim (Duration: 131.2ms | Allocations: 2083)
+I, [2023-08-14T11:15:40.534676 #33244]  INFO -- : [5795e40d-a8e4-45ca-8eeb-1a0da63f36a2] Completed 200 OK in 231ms (Views: 3.6ms | ActiveRecord: 203.3ms | Allocations: 3040)
+I, [2023-08-14T11:15:40.542949 #33244]  INFO -- : [f8229ef8-01e7-4809-a704-30ba248bd2f1] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:15:40 +0530
+F, [2023-08-14T11:15:40.543236 #33244] FATAL -- : [f8229ef8-01e7-4809-a704-30ba248bd2f1]   
+[f8229ef8-01e7-4809-a704-30ba248bd2f1] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[f8229ef8-01e7-4809-a704-30ba248bd2f1]   
+I, [2023-08-14T11:15:40.591780 #33244]  INFO -- : [de7615f1-5f7e-46ee-aa78-3fa121391b02] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:15:40 +0530
+F, [2023-08-14T11:15:40.592032 #33244] FATAL -- : [de7615f1-5f7e-46ee-aa78-3fa121391b02]   
+[de7615f1-5f7e-46ee-aa78-3fa121391b02] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[de7615f1-5f7e-46ee-aa78-3fa121391b02]   
+I, [2023-08-14T11:15:43.480107 #33244]  INFO -- : [730b28e1-b750-471e-b0df-be7b66fe6baa] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:15:43 +0530
+F, [2023-08-14T11:15:43.480420 #33244] FATAL -- : [730b28e1-b750-471e-b0df-be7b66fe6baa]   
+[730b28e1-b750-471e-b0df-be7b66fe6baa] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[730b28e1-b750-471e-b0df-be7b66fe6baa]   
+I, [2023-08-14T11:17:15.183913 #33244]  INFO -- : [8bb01ff7-5828-4d14-9df7-2d4873c224f5] Started GET "/" for 127.0.0.1 at 2023-08-14 11:17:15 +0530
+I, [2023-08-14T11:17:15.184337 #33244]  INFO -- : [8bb01ff7-5828-4d14-9df7-2d4873c224f5] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:17:15.395451 #33244]  INFO -- : [8bb01ff7-5828-4d14-9df7-2d4873c224f5]   Rendered static/dashboard.html.slim within layouts/application (Duration: 116.6ms | Allocations: 1648)
+I, [2023-08-14T11:17:15.396051 #33244]  INFO -- : [8bb01ff7-5828-4d14-9df7-2d4873c224f5]   Rendered layout layouts/application.html.slim (Duration: 117.2ms | Allocations: 2079)
+I, [2023-08-14T11:17:15.396211 #33244]  INFO -- : [8bb01ff7-5828-4d14-9df7-2d4873c224f5] Completed 200 OK in 212ms (Views: 3.4ms | ActiveRecord: 183.6ms | Allocations: 3021)
+I, [2023-08-14T11:17:15.403953 #33244]  INFO -- : [bd1cc03d-f1c4-419b-93f0-cbe64074637c] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:17:15 +0530
+F, [2023-08-14T11:17:15.404332 #33244] FATAL -- : [bd1cc03d-f1c4-419b-93f0-cbe64074637c]   
+[bd1cc03d-f1c4-419b-93f0-cbe64074637c] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[bd1cc03d-f1c4-419b-93f0-cbe64074637c]   
+I, [2023-08-14T11:17:15.542802 #33244]  INFO -- : [8530ef6d-d86c-4cb4-86b6-1618e60704c1] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:17:15 +0530
+F, [2023-08-14T11:17:15.543124 #33244] FATAL -- : [8530ef6d-d86c-4cb4-86b6-1618e60704c1]   
+[8530ef6d-d86c-4cb4-86b6-1618e60704c1] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[8530ef6d-d86c-4cb4-86b6-1618e60704c1]   
+I, [2023-08-14T11:17:24.079164 #33781]  INFO -- : [02f7e5e7-2ed1-4344-a256-547ce0655a31] Started GET "/" for 127.0.0.1 at 2023-08-14 11:17:24 +0530
+I, [2023-08-14T11:17:24.080157 #33781]  INFO -- : [02f7e5e7-2ed1-4344-a256-547ce0655a31] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:17:24.383337 #33781]  INFO -- : [75a77b10-2c5c-4617-a2be-0c7391fca731] Started GET "/" for 127.0.0.1 at 2023-08-14 11:17:24 +0530
+I, [2023-08-14T11:17:24.383774 #33781]  INFO -- : [75a77b10-2c5c-4617-a2be-0c7391fca731] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:17:24.938875 #33781]  INFO -- : [02f7e5e7-2ed1-4344-a256-547ce0655a31]   Rendered static/dashboard.html.slim within layouts/application (Duration: 237.7ms | Allocations: 47049)
+I, [2023-08-14T11:17:24.945512 #33781]  INFO -- : [02f7e5e7-2ed1-4344-a256-547ce0655a31]   Rendered layout layouts/application.html.slim (Duration: 244.4ms | Allocations: 66876)
+I, [2023-08-14T11:17:24.945727 #33781]  INFO -- : [02f7e5e7-2ed1-4344-a256-547ce0655a31] Completed 200 OK in 866ms (Views: 123.2ms | ActiveRecord: 467.7ms | Allocations: 80665)
+I, [2023-08-14T11:17:25.332450 #33781]  INFO -- : [75a77b10-2c5c-4617-a2be-0c7391fca731]   Rendered static/dashboard.html.slim within layouts/application (Duration: 282.8ms | Allocations: 1665)
+I, [2023-08-14T11:17:25.332987 #33781]  INFO -- : [75a77b10-2c5c-4617-a2be-0c7391fca731]   Rendered layout layouts/application.html.slim (Duration: 283.3ms | Allocations: 2097)
+I, [2023-08-14T11:17:25.333130 #33781]  INFO -- : [75a77b10-2c5c-4617-a2be-0c7391fca731] Completed 200 OK in 949ms (Views: 142.5ms | ActiveRecord: 483.7ms | Allocations: 82144)
+I, [2023-08-14T11:17:25.342084 #33781]  INFO -- : [0370c8c2-f484-4898-8cbf-a8fcdec5af23] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:17:25 +0530
+F, [2023-08-14T11:17:25.342493 #33781] FATAL -- : [0370c8c2-f484-4898-8cbf-a8fcdec5af23]   
+[0370c8c2-f484-4898-8cbf-a8fcdec5af23] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[0370c8c2-f484-4898-8cbf-a8fcdec5af23]   
+I, [2023-08-14T11:17:25.492891 #33781]  INFO -- : [c701a02e-7ac8-4aa4-806d-af7724080f7a] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:17:25 +0530
+F, [2023-08-14T11:17:25.493168 #33781] FATAL -- : [c701a02e-7ac8-4aa4-806d-af7724080f7a]   
+[c701a02e-7ac8-4aa4-806d-af7724080f7a] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[c701a02e-7ac8-4aa4-806d-af7724080f7a]   
+I, [2023-08-14T11:18:44.016240 #34170]  INFO -- : [0a5bc49e-2cb6-4060-90dd-f119a03d14a3] Started GET "/" for 127.0.0.1 at 2023-08-14 11:18:44 +0530
+I, [2023-08-14T11:18:44.017151 #34170]  INFO -- : [0a5bc49e-2cb6-4060-90dd-f119a03d14a3] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:18:45.052208 #34170]  INFO -- : [0a5bc49e-2cb6-4060-90dd-f119a03d14a3]   Rendered static/dashboard.html.slim within layouts/application (Duration: 298.8ms | Allocations: 44158)
+I, [2023-08-14T11:18:45.058422 #34170]  INFO -- : [0a5bc49e-2cb6-4060-90dd-f119a03d14a3]   Rendered layout layouts/application.html.slim (Duration: 305.1ms | Allocations: 63985)
+I, [2023-08-14T11:18:45.058630 #34170]  INFO -- : [0a5bc49e-2cb6-4060-90dd-f119a03d14a3] Completed 200 OK in 1041ms (Views: 148.7ms | ActiveRecord: 575.3ms | Allocations: 76802)
+I, [2023-08-14T11:18:45.066156 #34170]  INFO -- : [dad796f0-9f26-4773-a6e2-1d582de208d7] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:18:45 +0530
+F, [2023-08-14T11:18:45.066507 #34170] FATAL -- : [dad796f0-9f26-4773-a6e2-1d582de208d7]   
+[dad796f0-9f26-4773-a6e2-1d582de208d7] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[dad796f0-9f26-4773-a6e2-1d582de208d7]   
+I, [2023-08-14T11:18:45.176039 #34170]  INFO -- : [cc333f14-5bf6-4610-8934-142cb6c8b8a8] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:18:45 +0530
+F, [2023-08-14T11:18:45.176302 #34170] FATAL -- : [cc333f14-5bf6-4610-8934-142cb6c8b8a8]   
+[cc333f14-5bf6-4610-8934-142cb6c8b8a8] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[cc333f14-5bf6-4610-8934-142cb6c8b8a8]   
+I, [2023-08-14T11:18:47.683576 #34170]  INFO -- : [c4a43abd-460d-4fbd-811b-698dc909eeed] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:18:47 +0530
+F, [2023-08-14T11:18:47.683924 #34170] FATAL -- : [c4a43abd-460d-4fbd-811b-698dc909eeed]   
+[c4a43abd-460d-4fbd-811b-698dc909eeed] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[c4a43abd-460d-4fbd-811b-698dc909eeed]   
+I, [2023-08-14T11:23:18.954743 #35143]  INFO -- : [ea3540d6-fc14-4a65-9117-4a524807c362] Started GET "/" for 127.0.0.1 at 2023-08-14 11:23:18 +0530
+I, [2023-08-14T11:23:18.956364 #35143]  INFO -- : [ea3540d6-fc14-4a65-9117-4a524807c362] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:23:19.925250 #35143]  INFO -- : [ea3540d6-fc14-4a65-9117-4a524807c362]   Rendered static/dashboard.html.slim within layouts/application (Duration: 268.9ms | Allocations: 44162)
+I, [2023-08-14T11:23:20.182199 #35143]  INFO -- : [ea3540d6-fc14-4a65-9117-4a524807c362]   Rendered layout layouts/application.html.slim (Duration: 525.9ms | Allocations: 98096)
+I, [2023-08-14T11:23:20.182380 #35143]  INFO -- : [ea3540d6-fc14-4a65-9117-4a524807c362] Completed 200 OK in 1226ms (Views: 380.1ms | ActiveRecord: 550.4ms | Allocations: 110906)
+I, [2023-08-14T11:23:20.190669 #35143]  INFO -- : [81408de9-253d-46de-a8a6-27b1f9249729] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:23:20 +0530
+F, [2023-08-14T11:23:20.190997 #35143] FATAL -- : [81408de9-253d-46de-a8a6-27b1f9249729]   
+[81408de9-253d-46de-a8a6-27b1f9249729] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[81408de9-253d-46de-a8a6-27b1f9249729]   
+I, [2023-08-14T11:23:21.010959 #35143]  INFO -- : [57009a9d-7a56-41ed-bf41-ce4f9edf4e9e] Started GET "/" for 127.0.0.1 at 2023-08-14 11:23:21 +0530
+I, [2023-08-14T11:23:21.011397 #35143]  INFO -- : [57009a9d-7a56-41ed-bf41-ce4f9edf4e9e] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:23:21.203216 #35143]  INFO -- : [57009a9d-7a56-41ed-bf41-ce4f9edf4e9e]   Rendered static/dashboard.html.slim within layouts/application (Duration: 104.3ms | Allocations: 1650)
+I, [2023-08-14T11:23:21.203991 #35143]  INFO -- : [57009a9d-7a56-41ed-bf41-ce4f9edf4e9e]   Rendered layout layouts/application.html.slim (Duration: 105.1ms | Allocations: 2408)
+I, [2023-08-14T11:23:21.204149 #35143]  INFO -- : [57009a9d-7a56-41ed-bf41-ce4f9edf4e9e] Completed 200 OK in 193ms (Views: 3.7ms | ActiveRecord: 165.9ms | Allocations: 3363)
+I, [2023-08-14T11:23:21.211308 #35143]  INFO -- : [a310b8a7-c798-45eb-88d6-b8a698575361] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:23:21 +0530
+F, [2023-08-14T11:23:21.211612 #35143] FATAL -- : [a310b8a7-c798-45eb-88d6-b8a698575361]   
+[a310b8a7-c798-45eb-88d6-b8a698575361] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[a310b8a7-c798-45eb-88d6-b8a698575361]   
+I, [2023-08-14T11:23:21.257911 #35143]  INFO -- : [39c9c4fb-5189-46b5-abc7-771a7bbbe9ab] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:23:21 +0530
+F, [2023-08-14T11:23:21.258348 #35143] FATAL -- : [39c9c4fb-5189-46b5-abc7-771a7bbbe9ab]   
+[39c9c4fb-5189-46b5-abc7-771a7bbbe9ab] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[39c9c4fb-5189-46b5-abc7-771a7bbbe9ab]   
+I, [2023-08-14T11:23:23.602775 #35143]  INFO -- : [643682df-a4ca-431d-baca-efc8d11c219d] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:23:23 +0530
+F, [2023-08-14T11:23:23.603173 #35143] FATAL -- : [643682df-a4ca-431d-baca-efc8d11c219d]   
+[643682df-a4ca-431d-baca-efc8d11c219d] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[643682df-a4ca-431d-baca-efc8d11c219d]   
+I, [2023-08-14T11:30:43.322612 #36483]  INFO -- : [05b20539-5e60-46f0-a859-e56f6a11dc9e] Started GET "/" for 127.0.0.1 at 2023-08-14 11:30:43 +0530
+I, [2023-08-14T11:30:43.324336 #36483]  INFO -- : [05b20539-5e60-46f0-a859-e56f6a11dc9e] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:30:44.005946 #36483]  INFO -- : [05b20539-5e60-46f0-a859-e56f6a11dc9e]   Rendered static/dashboard.html.slim within layouts/application (Duration: 193.7ms | Allocations: 44161)
+I, [2023-08-14T11:30:44.238181 #36483]  INFO -- : [05b20539-5e60-46f0-a859-e56f6a11dc9e]   Rendered layout layouts/application.html.slim (Duration: 426.0ms | Allocations: 77424)
+I, [2023-08-14T11:30:44.238393 #36483]  INFO -- : [05b20539-5e60-46f0-a859-e56f6a11dc9e] Completed 200 OK in 914ms (Views: 335.3ms | ActiveRecord: 351.6ms | Allocations: 90239)
+I, [2023-08-14T11:30:44.246205 #36483]  INFO -- : [9f3f77c3-3b7b-45ce-9969-67c97b41e5ef] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:30:44 +0530
+F, [2023-08-14T11:30:44.246527 #36483] FATAL -- : [9f3f77c3-3b7b-45ce-9969-67c97b41e5ef]   
+[9f3f77c3-3b7b-45ce-9969-67c97b41e5ef] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[9f3f77c3-3b7b-45ce-9969-67c97b41e5ef]   
+I, [2023-08-14T11:30:46.734452 #36483]  INFO -- : [5e641870-40a4-462d-816e-a445e17e908d] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:30:46 +0530
+F, [2023-08-14T11:30:46.734803 #36483] FATAL -- : [5e641870-40a4-462d-816e-a445e17e908d]   
+[5e641870-40a4-462d-816e-a445e17e908d] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[5e641870-40a4-462d-816e-a445e17e908d]   
+I, [2023-08-14T11:30:53.639597 #36483]  INFO -- : [80f69dd3-fb97-4a39-89ac-56cde969da96] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 11:30:53 +0530
+I, [2023-08-14T11:30:53.640086 #36483]  INFO -- : [80f69dd3-fb97-4a39-89ac-56cde969da96] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T11:30:53.699144 #36483]  INFO -- : [80f69dd3-fb97-4a39-89ac-56cde969da96]   Rendered users_account/index.html.slim within layouts/application (Duration: 27.2ms | Allocations: 6794)
+I, [2023-08-14T11:30:53.700037 #36483]  INFO -- : [80f69dd3-fb97-4a39-89ac-56cde969da96]   Rendered layout layouts/application.html.slim (Duration: 28.1ms | Allocations: 7647)
+I, [2023-08-14T11:30:53.700195 #36483]  INFO -- : [80f69dd3-fb97-4a39-89ac-56cde969da96] Completed 200 OK in 60ms (Views: 12.8ms | ActiveRecord: 30.8ms | Allocations: 9290)
+I, [2023-08-14T11:30:53.708405 #36483]  INFO -- : [d355e9f8-16a8-47d2-8ab9-8d1560016846] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:30:53 +0530
+F, [2023-08-14T11:30:53.708757 #36483] FATAL -- : [d355e9f8-16a8-47d2-8ab9-8d1560016846]   
+[d355e9f8-16a8-47d2-8ab9-8d1560016846] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[d355e9f8-16a8-47d2-8ab9-8d1560016846]   
+I, [2023-08-14T11:30:54.016622 #36483]  INFO -- : [e704ea05-31d6-42ff-91a4-ec3c51aa8c08] Started GET "/" for 127.0.0.1 at 2023-08-14 11:30:54 +0530
+I, [2023-08-14T11:30:54.017050 #36483]  INFO -- : [e704ea05-31d6-42ff-91a4-ec3c51aa8c08] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:30:54.167715 #36483]  INFO -- : [e704ea05-31d6-42ff-91a4-ec3c51aa8c08]   Rendered static/dashboard.html.slim within layouts/application (Duration: 88.4ms | Allocations: 1650)
+I, [2023-08-14T11:30:54.168614 #36483]  INFO -- : [e704ea05-31d6-42ff-91a4-ec3c51aa8c08]   Rendered layout layouts/application.html.slim (Duration: 89.3ms | Allocations: 2404)
+I, [2023-08-14T11:30:54.168920 #36483]  INFO -- : [e704ea05-31d6-42ff-91a4-ec3c51aa8c08] Completed 200 OK in 152ms (Views: 4.0ms | ActiveRecord: 131.4ms | Allocations: 3347)
+I, [2023-08-14T11:30:54.180138 #36483]  INFO -- : [791a50dd-a9ce-4f68-b342-9aa6acc8e0bd] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:30:54 +0530
+F, [2023-08-14T11:30:54.180552 #36483] FATAL -- : [791a50dd-a9ce-4f68-b342-9aa6acc8e0bd]   
+[791a50dd-a9ce-4f68-b342-9aa6acc8e0bd] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[791a50dd-a9ce-4f68-b342-9aa6acc8e0bd]   
+I, [2023-08-14T11:30:56.787439 #36483]  INFO -- : [5aeffbfb-1908-4c10-a7cd-0e71891a2fe1] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:30:56 +0530
+F, [2023-08-14T11:30:56.787718 #36483] FATAL -- : [5aeffbfb-1908-4c10-a7cd-0e71891a2fe1]   
+[5aeffbfb-1908-4c10-a7cd-0e71891a2fe1] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[5aeffbfb-1908-4c10-a7cd-0e71891a2fe1]   
+I, [2023-08-14T11:33:28.398183 #37118]  INFO -- : [4136cd78-dad9-432b-bb67-2b42edfef271] Started GET "/" for 127.0.0.1 at 2023-08-14 11:33:28 +0530
+I, [2023-08-14T11:33:28.399237 #37118]  INFO -- : [4136cd78-dad9-432b-bb67-2b42edfef271] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:33:29.483297 #37118]  INFO -- : [4136cd78-dad9-432b-bb67-2b42edfef271]   Rendered static/dashboard.html.slim within layouts/application (Duration: 287.8ms | Allocations: 44161)
+I, [2023-08-14T11:33:29.715077 #37118]  INFO -- : [4136cd78-dad9-432b-bb67-2b42edfef271]   Rendered layout layouts/application.html.slim (Duration: 519.6ms | Allocations: 78619)
+I, [2023-08-14T11:33:29.715317 #37118]  INFO -- : [4136cd78-dad9-432b-bb67-2b42edfef271] Completed 200 OK in 1316ms (Views: 368.2ms | ActiveRecord: 641.2ms | Allocations: 91446)
+I, [2023-08-14T11:33:29.725324 #37118]  INFO -- : [601676f1-7329-4ae7-8d92-db9dd99d77af] Started GET "/assets/application-713cc9a3adcf394cb1e90cc48b4f612de35ba4992dce4ad2bc489d5d5ec06263.css" for 127.0.0.1 at 2023-08-14 11:33:29 +0530
+I, [2023-08-14T11:33:29.726117 #37118]  INFO -- : [289e0ca8-08a8-49c0-ab59-ed2b69900aa5] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:33:29 +0530
+F, [2023-08-14T11:33:29.726565 #37118] FATAL -- : [289e0ca8-08a8-49c0-ab59-ed2b69900aa5]   
+[289e0ca8-08a8-49c0-ab59-ed2b69900aa5] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[289e0ca8-08a8-49c0-ab59-ed2b69900aa5]   
+I, [2023-08-14T11:33:29.883196 #37118]  INFO -- : [c4b2d416-3cb5-4019-b638-d471056861cd] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:33:29 +0530
+F, [2023-08-14T11:33:29.883492 #37118] FATAL -- : [c4b2d416-3cb5-4019-b638-d471056861cd]   
+[c4b2d416-3cb5-4019-b638-d471056861cd] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[c4b2d416-3cb5-4019-b638-d471056861cd]   
+I, [2023-08-14T11:35:20.316735 #37639]  INFO -- : [bf30da0e-92ab-4432-93a8-36a6661b08a7] Started GET "/" for 127.0.0.1 at 2023-08-14 11:35:20 +0530
+I, [2023-08-14T11:35:20.317948 #37639]  INFO -- : [bf30da0e-92ab-4432-93a8-36a6661b08a7] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:35:21.207304 #37639]  INFO -- : [bf30da0e-92ab-4432-93a8-36a6661b08a7]   Rendered static/dashboard.html.slim within layouts/application (Duration: 253.5ms | Allocations: 44165)
+I, [2023-08-14T11:35:21.434175 #37639]  INFO -- : [bf30da0e-92ab-4432-93a8-36a6661b08a7]   Rendered layout layouts/application.html.slim (Duration: 480.4ms | Allocations: 79905)
+I, [2023-08-14T11:35:21.434382 #37639]  INFO -- : [bf30da0e-92ab-4432-93a8-36a6661b08a7] Completed 200 OK in 1116ms (Views: 350.7ms | ActiveRecord: 483.5ms | Allocations: 92713)
+I, [2023-08-14T11:35:21.449651 #37639]  INFO -- : [baad223f-7d92-415a-af8f-2c0fe1bc6ddb] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:35:21 +0530
+F, [2023-08-14T11:35:21.450013 #37639] FATAL -- : [baad223f-7d92-415a-af8f-2c0fe1bc6ddb]   
+[baad223f-7d92-415a-af8f-2c0fe1bc6ddb] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[baad223f-7d92-415a-af8f-2c0fe1bc6ddb]   
+I, [2023-08-14T11:35:21.603398 #37639]  INFO -- : [0618244d-afbc-4ceb-a7c9-278f21a49369] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:35:21 +0530
+F, [2023-08-14T11:35:21.603866 #37639] FATAL -- : [0618244d-afbc-4ceb-a7c9-278f21a49369]   
+[0618244d-afbc-4ceb-a7c9-278f21a49369] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[0618244d-afbc-4ceb-a7c9-278f21a49369]   
+I, [2023-08-14T11:36:07.810166 #37876]  INFO -- : [cf690aed-e916-4571-a471-e57ab43b8386] Started GET "/" for 127.0.0.1 at 2023-08-14 11:36:07 +0530
+I, [2023-08-14T11:36:07.811126 #37876]  INFO -- : [cf690aed-e916-4571-a471-e57ab43b8386] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:36:08.718695 #37876]  INFO -- : [cf690aed-e916-4571-a471-e57ab43b8386]   Rendered static/dashboard.html.slim within layouts/application (Duration: 246.0ms | Allocations: 44161)
+I, [2023-08-14T11:36:08.961894 #37876]  INFO -- : [cf690aed-e916-4571-a471-e57ab43b8386]   Rendered layout layouts/application.html.slim (Duration: 489.3ms | Allocations: 85501)
+I, [2023-08-14T11:36:08.962097 #37876]  INFO -- : [cf690aed-e916-4571-a471-e57ab43b8386] Completed 200 OK in 1151ms (Views: 362.3ms | ActiveRecord: 485.1ms | Allocations: 98325)
+I, [2023-08-14T11:36:08.972409 #37876]  INFO -- : [470e60c8-025d-40fd-8a16-ea3ed2a947ec] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:36:08 +0530
+F, [2023-08-14T11:36:08.973026 #37876] FATAL -- : [470e60c8-025d-40fd-8a16-ea3ed2a947ec]   
+[470e60c8-025d-40fd-8a16-ea3ed2a947ec] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[470e60c8-025d-40fd-8a16-ea3ed2a947ec]   
+I, [2023-08-14T11:36:09.128815 #37876]  INFO -- : [84de2427-7d5d-4385-8335-e6d66c63c3ba] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:36:09 +0530
+F, [2023-08-14T11:36:09.129218 #37876] FATAL -- : [84de2427-7d5d-4385-8335-e6d66c63c3ba]   
+[84de2427-7d5d-4385-8335-e6d66c63c3ba] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[84de2427-7d5d-4385-8335-e6d66c63c3ba]   
+I, [2023-08-14T11:37:20.299417 #38120]  INFO -- : [8bce5bdd-479b-468b-91dd-8eae3712b97e] Started GET "/" for 127.0.0.1 at 2023-08-14 11:37:20 +0530
+I, [2023-08-14T11:37:20.301343 #38120]  INFO -- : [8bce5bdd-479b-468b-91dd-8eae3712b97e] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:37:21.877639 #38120]  INFO -- : [8bce5bdd-479b-468b-91dd-8eae3712b97e]   Rendered static/dashboard.html.slim within layouts/application (Duration: 181.7ms | Allocations: 44165)
+I, [2023-08-14T11:37:22.117134 #38120]  INFO -- : [8bce5bdd-479b-468b-91dd-8eae3712b97e]   Rendered layout layouts/application.html.slim (Duration: 421.2ms | Allocations: 80017)
+I, [2023-08-14T11:37:22.117345 #38120]  INFO -- : [8bce5bdd-479b-468b-91dd-8eae3712b97e] Completed 200 OK in 1816ms (Views: 331.1ms | ActiveRecord: 1182.2ms | Allocations: 92831)
+I, [2023-08-14T11:37:22.124874 #38120]  INFO -- : [5252e199-3eef-4624-9966-b4ee03226245] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:37:22 +0530
+F, [2023-08-14T11:37:22.125267 #38120] FATAL -- : [5252e199-3eef-4624-9966-b4ee03226245]   
+[5252e199-3eef-4624-9966-b4ee03226245] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[5252e199-3eef-4624-9966-b4ee03226245]   
+I, [2023-08-14T11:37:25.154202 #38120]  INFO -- : [60a6b0cb-978b-49e9-918c-5866b71b2c56] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:37:25 +0530
+F, [2023-08-14T11:37:25.154599 #38120] FATAL -- : [60a6b0cb-978b-49e9-918c-5866b71b2c56]   
+[60a6b0cb-978b-49e9-918c-5866b71b2c56] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[60a6b0cb-978b-49e9-918c-5866b71b2c56]   
+I, [2023-08-14T11:37:28.544827 #38120]  INFO -- : [70310d4a-f550-426e-bab9-f7f9901af612] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:37:28 +0530
+F, [2023-08-14T11:37:28.545188 #38120] FATAL -- : [70310d4a-f550-426e-bab9-f7f9901af612]   
+[70310d4a-f550-426e-bab9-f7f9901af612] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[70310d4a-f550-426e-bab9-f7f9901af612]   
+I, [2023-08-14T11:38:24.014575 #38628]  INFO -- : [863a159a-c67a-4116-a4c9-65a6f232c2fc] Started GET "/" for 127.0.0.1 at 2023-08-14 11:38:24 +0530
+I, [2023-08-14T11:38:24.016357 #38628]  INFO -- : [863a159a-c67a-4116-a4c9-65a6f232c2fc] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:38:24.954166 #38628]  INFO -- : [4ee89433-d102-4dee-8917-7160075b1527] Started GET "/" for 127.0.0.1 at 2023-08-14 11:38:24 +0530
+I, [2023-08-14T11:38:24.954618 #38628]  INFO -- : [4ee89433-d102-4dee-8917-7160075b1527] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:38:25.057667 #38628]  INFO -- : [863a159a-c67a-4116-a4c9-65a6f232c2fc]   Rendered static/dashboard.html.slim within layouts/application (Duration: 292.8ms | Allocations: 45153)
+I, [2023-08-14T11:38:25.064304 #38628]  INFO -- : [863a159a-c67a-4116-a4c9-65a6f232c2fc]   Rendered layout layouts/application.html.slim (Duration: 299.5ms | Allocations: 62749)
+I, [2023-08-14T11:38:25.064526 #38628]  INFO -- : [863a159a-c67a-4116-a4c9-65a6f232c2fc] Completed 200 OK in 1048ms (Views: 149.0ms | ActiveRecord: 594.0ms | Allocations: 75558)
+I, [2023-08-14T11:38:25.846676 #38628]  INFO -- : [4ee89433-d102-4dee-8917-7160075b1527]   Rendered static/dashboard.html.slim within layouts/application (Duration: 252.8ms | Allocations: 1665)
+I, [2023-08-14T11:38:25.847303 #38628]  INFO -- : [4ee89433-d102-4dee-8917-7160075b1527]   Rendered layout layouts/application.html.slim (Duration: 253.5ms | Allocations: 2097)
+I, [2023-08-14T11:38:25.847510 #38628]  INFO -- : [4ee89433-d102-4dee-8917-7160075b1527] Completed 200 OK in 893ms (Views: 125.5ms | ActiveRecord: 480.8ms | Allocations: 38193)
+I, [2023-08-14T11:38:25.854237 #38628]  INFO -- : [90c1f636-169d-48f6-bdd6-a3643dbcf059] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:38:25 +0530
+F, [2023-08-14T11:38:25.854578 #38628] FATAL -- : [90c1f636-169d-48f6-bdd6-a3643dbcf059]   
+[90c1f636-169d-48f6-bdd6-a3643dbcf059] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[90c1f636-169d-48f6-bdd6-a3643dbcf059]   
+I, [2023-08-14T11:38:25.970706 #38628]  INFO -- : [7f1c8549-4c92-4a76-99d1-c2bb0e4dffbb] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:38:25 +0530
+F, [2023-08-14T11:38:25.970976 #38628] FATAL -- : [7f1c8549-4c92-4a76-99d1-c2bb0e4dffbb]   
+[7f1c8549-4c92-4a76-99d1-c2bb0e4dffbb] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[7f1c8549-4c92-4a76-99d1-c2bb0e4dffbb]   
+I, [2023-08-14T11:38:26.505142 #38628]  INFO -- : [e45f51b7-cbbf-46a1-af0b-09198b71bbd1] Started GET "/" for 127.0.0.1 at 2023-08-14 11:38:26 +0530
+I, [2023-08-14T11:38:26.505603 #38628]  INFO -- : [e45f51b7-cbbf-46a1-af0b-09198b71bbd1] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:38:26.895567 #38628]  INFO -- : [e45f51b7-cbbf-46a1-af0b-09198b71bbd1]   Rendered static/dashboard.html.slim within layouts/application (Duration: 121.6ms | Allocations: 1650)
+I, [2023-08-14T11:38:26.896154 #38628]  INFO -- : [e45f51b7-cbbf-46a1-af0b-09198b71bbd1]   Rendered layout layouts/application.html.slim (Duration: 122.3ms | Allocations: 2082)
+I, [2023-08-14T11:38:26.896331 #38628]  INFO -- : [e45f51b7-cbbf-46a1-af0b-09198b71bbd1] Completed 200 OK in 391ms (Views: 3.3ms | ActiveRecord: 258.1ms | Allocations: 3046)
+I, [2023-08-14T11:38:26.905297 #38628]  INFO -- : [21d407f3-87bf-4aa8-bbc1-1465d1ee073c] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:38:26 +0530
+F, [2023-08-14T11:38:26.905604 #38628] FATAL -- : [21d407f3-87bf-4aa8-bbc1-1465d1ee073c]   
+[21d407f3-87bf-4aa8-bbc1-1465d1ee073c] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[21d407f3-87bf-4aa8-bbc1-1465d1ee073c]   
+I, [2023-08-14T11:38:27.049108 #38628]  INFO -- : [2c61c126-1a49-4513-bfff-9c464eb72aac] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:38:27 +0530
+F, [2023-08-14T11:38:27.049391 #38628] FATAL -- : [2c61c126-1a49-4513-bfff-9c464eb72aac]   
+[2c61c126-1a49-4513-bfff-9c464eb72aac] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[2c61c126-1a49-4513-bfff-9c464eb72aac]   
+I, [2023-08-14T11:40:01.773202 #39115]  INFO -- : [7f0af031-3a5e-4258-a98c-73aa3e184021] Started GET "/" for 127.0.0.1 at 2023-08-14 11:40:01 +0530
+I, [2023-08-14T11:40:01.775222 #39115]  INFO -- : [7f0af031-3a5e-4258-a98c-73aa3e184021] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:40:02.636905 #39115]  INFO -- : [7f0af031-3a5e-4258-a98c-73aa3e184021]   Rendered static/dashboard.html.slim within layouts/application (Duration: 250.0ms | Allocations: 44161)
+I, [2023-08-14T11:40:02.644384 #39115]  INFO -- : [7f0af031-3a5e-4258-a98c-73aa3e184021]   Rendered layout layouts/application.html.slim (Duration: 257.5ms | Allocations: 61764)
+I, [2023-08-14T11:40:02.644586 #39115]  INFO -- : [7f0af031-3a5e-4258-a98c-73aa3e184021] Completed 200 OK in 869ms (Views: 130.6ms | ActiveRecord: 477.9ms | Allocations: 74578)
+I, [2023-08-14T11:40:02.654801 #39115]  INFO -- : [428916f8-1e41-4bef-b3c7-9d6b34eec3e6] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:40:02 +0530
+F, [2023-08-14T11:40:02.655153 #39115] FATAL -- : [428916f8-1e41-4bef-b3c7-9d6b34eec3e6]   
+[428916f8-1e41-4bef-b3c7-9d6b34eec3e6] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[428916f8-1e41-4bef-b3c7-9d6b34eec3e6]   
+I, [2023-08-14T11:40:03.169642 #39115]  INFO -- : [0cf45e37-c8c5-40a5-9c0e-5052459d4448] Started GET "/" for 127.0.0.1 at 2023-08-14 11:40:03 +0530
+I, [2023-08-14T11:40:03.170082 #39115]  INFO -- : [0cf45e37-c8c5-40a5-9c0e-5052459d4448] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:40:03.349714 #39115]  INFO -- : [0cf45e37-c8c5-40a5-9c0e-5052459d4448]   Rendered static/dashboard.html.slim within layouts/application (Duration: 98.6ms | Allocations: 1650)
+I, [2023-08-14T11:40:03.350324 #39115]  INFO -- : [0cf45e37-c8c5-40a5-9c0e-5052459d4448]   Rendered layout layouts/application.html.slim (Duration: 99.2ms | Allocations: 2082)
+I, [2023-08-14T11:40:03.350476 #39115]  INFO -- : [0cf45e37-c8c5-40a5-9c0e-5052459d4448] Completed 200 OK in 180ms (Views: 3.4ms | ActiveRecord: 156.1ms | Allocations: 3037)
+I, [2023-08-14T11:40:03.359794 #39115]  INFO -- : [dfb69268-7152-4d25-9e40-4156429a4f58] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:40:03 +0530
+F, [2023-08-14T11:40:03.360101 #39115] FATAL -- : [dfb69268-7152-4d25-9e40-4156429a4f58]   
+[dfb69268-7152-4d25-9e40-4156429a4f58] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[dfb69268-7152-4d25-9e40-4156429a4f58]   
+I, [2023-08-14T11:40:03.403857 #39115]  INFO -- : [0dd39cbf-e27c-4141-842a-3d74c75c1d9c] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:40:03 +0530
+F, [2023-08-14T11:40:03.404266 #39115] FATAL -- : [0dd39cbf-e27c-4141-842a-3d74c75c1d9c]   
+[0dd39cbf-e27c-4141-842a-3d74c75c1d9c] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[0dd39cbf-e27c-4141-842a-3d74c75c1d9c]   
+I, [2023-08-14T11:40:04.331319 #39115]  INFO -- : [815b7a1b-f763-4017-be76-b8345c4bad53] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:40:04 +0530
+F, [2023-08-14T11:40:04.331834 #39115] FATAL -- : [815b7a1b-f763-4017-be76-b8345c4bad53]   
+[815b7a1b-f763-4017-be76-b8345c4bad53] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[815b7a1b-f763-4017-be76-b8345c4bad53]   
+I, [2023-08-14T11:40:07.365383 #39115]  INFO -- : [a56a8865-6598-4e10-a10f-737eb4f2e6d1] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:40:07 +0530
+F, [2023-08-14T11:40:07.365628 #39115] FATAL -- : [a56a8865-6598-4e10-a10f-737eb4f2e6d1]   
+[a56a8865-6598-4e10-a10f-737eb4f2e6d1] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[a56a8865-6598-4e10-a10f-737eb4f2e6d1]   
+I, [2023-08-14T11:41:20.704719 #39605]  INFO -- : [0229e4bd-d4b2-4049-a38a-9c0f9c48e13c] Started GET "/" for 127.0.0.1 at 2023-08-14 11:41:20 +0530
+I, [2023-08-14T11:41:20.706598 #39605]  INFO -- : [0229e4bd-d4b2-4049-a38a-9c0f9c48e13c] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:41:21.465314 #39605]  INFO -- : [0229e4bd-d4b2-4049-a38a-9c0f9c48e13c]   Rendered static/dashboard.html.slim within layouts/application (Duration: 206.0ms | Allocations: 44166)
+I, [2023-08-14T11:41:21.473225 #39605]  INFO -- : [0229e4bd-d4b2-4049-a38a-9c0f9c48e13c]   Rendered layout layouts/application.html.slim (Duration: 214.0ms | Allocations: 61769)
+I, [2023-08-14T11:41:21.473424 #39605]  INFO -- : [0229e4bd-d4b2-4049-a38a-9c0f9c48e13c] Completed 200 OK in 767ms (Views: 112.5ms | ActiveRecord: 368.9ms | Allocations: 74582)
+I, [2023-08-14T11:41:21.484440 #39605]  INFO -- : [5ddc22ad-6e7e-4eeb-a9ad-b8c9b4901962] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:41:21 +0530
+F, [2023-08-14T11:41:21.484979 #39605] FATAL -- : [5ddc22ad-6e7e-4eeb-a9ad-b8c9b4901962]   
+[5ddc22ad-6e7e-4eeb-a9ad-b8c9b4901962] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[5ddc22ad-6e7e-4eeb-a9ad-b8c9b4901962]   
+I, [2023-08-14T11:41:22.106854 #39605]  INFO -- : [acf75a83-ac2c-4fe6-927f-1ef18d1771dd] Started GET "/" for 127.0.0.1 at 2023-08-14 11:41:22 +0530
+I, [2023-08-14T11:41:22.107378 #39605]  INFO -- : [acf75a83-ac2c-4fe6-927f-1ef18d1771dd] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:41:22.246968 #39605]  INFO -- : [acf75a83-ac2c-4fe6-927f-1ef18d1771dd]   Rendered static/dashboard.html.slim within layouts/application (Duration: 76.4ms | Allocations: 1650)
+I, [2023-08-14T11:41:22.247629 #39605]  INFO -- : [acf75a83-ac2c-4fe6-927f-1ef18d1771dd]   Rendered layout layouts/application.html.slim (Duration: 77.1ms | Allocations: 2082)
+I, [2023-08-14T11:41:22.247813 #39605]  INFO -- : [acf75a83-ac2c-4fe6-927f-1ef18d1771dd] Completed 200 OK in 140ms (Views: 3.7ms | ActiveRecord: 120.1ms | Allocations: 3031)
+I, [2023-08-14T11:41:22.257471 #39605]  INFO -- : [26cbf5af-91ea-4826-95af-cbeb1874ada1] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:41:22 +0530
+F, [2023-08-14T11:41:22.257820 #39605] FATAL -- : [26cbf5af-91ea-4826-95af-cbeb1874ada1]   
+[26cbf5af-91ea-4826-95af-cbeb1874ada1] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[26cbf5af-91ea-4826-95af-cbeb1874ada1]   
+I, [2023-08-14T11:41:22.302346 #39605]  INFO -- : [a3f5b441-4f4f-481b-a86e-e158a2204744] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:41:22 +0530
+F, [2023-08-14T11:41:22.302687 #39605] FATAL -- : [a3f5b441-4f4f-481b-a86e-e158a2204744]   
+[a3f5b441-4f4f-481b-a86e-e158a2204744] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[a3f5b441-4f4f-481b-a86e-e158a2204744]   
+I, [2023-08-14T11:41:23.648233 #39605]  INFO -- : [a8abfc37-42ad-4b72-a7b7-dc9c215b06c8] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:41:23 +0530
+F, [2023-08-14T11:41:23.648521 #39605] FATAL -- : [a8abfc37-42ad-4b72-a7b7-dc9c215b06c8]   
+[a8abfc37-42ad-4b72-a7b7-dc9c215b06c8] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[a8abfc37-42ad-4b72-a7b7-dc9c215b06c8]   
+I, [2023-08-14T11:42:42.041244 #40279]  INFO -- : [6fc3af6b-ad7d-498a-a53a-a459b5767c35] Started GET "/" for 127.0.0.1 at 2023-08-14 11:42:42 +0530
+I, [2023-08-14T11:42:42.042139 #40279]  INFO -- : [6fc3af6b-ad7d-498a-a53a-a459b5767c35] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:42:42.707447 #40279]  INFO -- : [6fc3af6b-ad7d-498a-a53a-a459b5767c35]   Rendered static/dashboard.html.slim within layouts/application (Duration: 192.5ms | Allocations: 44147)
+I, [2023-08-14T11:42:42.713361 #40279]  INFO -- : [6fc3af6b-ad7d-498a-a53a-a459b5767c35]   Rendered layout layouts/application.html.slim (Duration: 198.5ms | Allocations: 61743)
+I, [2023-08-14T11:42:42.713590 #40279]  INFO -- : [6fc3af6b-ad7d-498a-a53a-a459b5767c35] Completed 200 OK in 671ms (Views: 102.4ms | ActiveRecord: 367.8ms | Allocations: 74544)
+I, [2023-08-14T11:42:42.724105 #40279]  INFO -- : [d8ce365d-48de-4897-993b-68d9df33ee0f] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:42:42 +0530
+F, [2023-08-14T11:42:42.724552 #40279] FATAL -- : [d8ce365d-48de-4897-993b-68d9df33ee0f]   
+[d8ce365d-48de-4897-993b-68d9df33ee0f] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[d8ce365d-48de-4897-993b-68d9df33ee0f]   
+I, [2023-08-14T11:42:42.883821 #40279]  INFO -- : [96e2e952-9e3a-41c9-8cb2-d6b53104e679] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:42:42 +0530
+F, [2023-08-14T11:42:42.884130 #40279] FATAL -- : [96e2e952-9e3a-41c9-8cb2-d6b53104e679]   
+[96e2e952-9e3a-41c9-8cb2-d6b53104e679] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[96e2e952-9e3a-41c9-8cb2-d6b53104e679]   
+I, [2023-08-14T11:42:46.568175 #40279]  INFO -- : [3b41a035-4188-43a7-837f-44ce9867935e] Started GET "/" for 127.0.0.1 at 2023-08-14 11:42:46 +0530
+I, [2023-08-14T11:42:46.568626 #40279]  INFO -- : [3b41a035-4188-43a7-837f-44ce9867935e] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:42:46.731710 #40279]  INFO -- : [3b41a035-4188-43a7-837f-44ce9867935e]   Rendered static/dashboard.html.slim within layouts/application (Duration: 80.2ms | Allocations: 1654)
+I, [2023-08-14T11:42:46.732277 #40279]  INFO -- : [3b41a035-4188-43a7-837f-44ce9867935e]   Rendered layout layouts/application.html.slim (Duration: 80.8ms | Allocations: 2086)
+I, [2023-08-14T11:42:46.732470 #40279]  INFO -- : [3b41a035-4188-43a7-837f-44ce9867935e] Completed 200 OK in 164ms (Views: 3.4ms | ActiveRecord: 141.9ms | Allocations: 3043)
+I, [2023-08-14T11:42:46.740134 #40279]  INFO -- : [783251b0-9f57-4ca3-a48d-80e850363e7e] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:42:46 +0530
+F, [2023-08-14T11:42:46.740461 #40279] FATAL -- : [783251b0-9f57-4ca3-a48d-80e850363e7e]   
+[783251b0-9f57-4ca3-a48d-80e850363e7e] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[783251b0-9f57-4ca3-a48d-80e850363e7e]   
+I, [2023-08-14T11:42:46.852210 #40279]  INFO -- : [a279c71c-246a-4a9e-9945-5cd19def6d79] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:42:46 +0530
+F, [2023-08-14T11:42:46.852583 #40279] FATAL -- : [a279c71c-246a-4a9e-9945-5cd19def6d79]   
+[a279c71c-246a-4a9e-9945-5cd19def6d79] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[a279c71c-246a-4a9e-9945-5cd19def6d79]   
+I, [2023-08-14T11:42:48.199491 #40279]  INFO -- : [47a06312-24a5-4f63-ba38-e9a81ec95071] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 11:42:48 +0530
+F, [2023-08-14T11:42:48.199850 #40279] FATAL -- : [47a06312-24a5-4f63-ba38-e9a81ec95071]   
+[47a06312-24a5-4f63-ba38-e9a81ec95071] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[47a06312-24a5-4f63-ba38-e9a81ec95071]   
+I, [2023-08-14T11:50:26.407175 #41819]  INFO -- : [ba273004-2515-411d-b155-6a6dab14ddef] Started GET "/" for 127.0.0.1 at 2023-08-14 11:50:26 +0530
+I, [2023-08-14T11:50:26.408865 #41819]  INFO -- : [ba273004-2515-411d-b155-6a6dab14ddef] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T11:50:27.631832 #41819]  INFO -- : [ba273004-2515-411d-b155-6a6dab14ddef]   Rendered static/dashboard.html.slim within layouts/application (Duration: 335.1ms | Allocations: 44149)
+I, [2023-08-14T11:50:27.638588 #41819]  INFO -- : [ba273004-2515-411d-b155-6a6dab14ddef]   Rendered layout layouts/application.html.slim (Duration: 341.9ms | Allocations: 63981)
+I, [2023-08-14T11:50:27.638776 #41819]  INFO -- : [ba273004-2515-411d-b155-6a6dab14ddef] Completed 200 OK in 1230ms (Views: 173.0ms | ActiveRecord: 667.2ms | Allocations: 76780)
+I, [2023-08-14T11:50:27.648400 #41819]  INFO -- : [55868872-db28-4972-8ca8-3158f5da72f7] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:50:27 +0530
+F, [2023-08-14T11:50:27.648755 #41819] FATAL -- : [55868872-db28-4972-8ca8-3158f5da72f7]   
+[55868872-db28-4972-8ca8-3158f5da72f7] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[55868872-db28-4972-8ca8-3158f5da72f7]   
+I, [2023-08-14T11:50:27.768604 #41819]  INFO -- : [444eb737-4f45-4ad3-9bed-ddb84d2450a2] Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-14 11:50:27 +0530
+F, [2023-08-14T11:50:27.768894 #41819] FATAL -- : [444eb737-4f45-4ad3-9bed-ddb84d2450a2]   
+[444eb737-4f45-4ad3-9bed-ddb84d2450a2] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[444eb737-4f45-4ad3-9bed-ddb84d2450a2]   
+I, [2023-08-14T11:50:28.306390 #41819]  INFO -- : [c580047f-5026-4b65-b58c-5b8b1425b010] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 11:50:28 +0530
+F, [2023-08-14T11:50:28.306652 #41819] FATAL -- : [c580047f-5026-4b65-b58c-5b8b1425b010]   
+[c580047f-5026-4b65-b58c-5b8b1425b010] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[c580047f-5026-4b65-b58c-5b8b1425b010]   
+I, [2023-08-14T12:04:12.919719 #44481]  INFO -- : [c8606359-fd8a-4a36-ac11-a1f8957ee965] Started GET "/" for 127.0.0.1 at 2023-08-14 12:04:12 +0530
+I, [2023-08-14T12:04:12.921763 #44481]  INFO -- : [c8606359-fd8a-4a36-ac11-a1f8957ee965] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:04:13.993495 #44481]  INFO -- : [c8606359-fd8a-4a36-ac11-a1f8957ee965]   Rendered static/dashboard.html.slim within layouts/application (Duration: 305.9ms | Allocations: 44149)
+I, [2023-08-14T12:04:14.000384 #44481]  INFO -- : [c8606359-fd8a-4a36-ac11-a1f8957ee965]   Rendered layout layouts/application.html.slim (Duration: 312.8ms | Allocations: 63981)
+I, [2023-08-14T12:04:14.000636 #44481]  INFO -- : [c8606359-fd8a-4a36-ac11-a1f8957ee965] Completed 200 OK in 1079ms (Views: 156.0ms | ActiveRecord: 577.7ms | Allocations: 76804)
+I, [2023-08-14T12:04:14.009126 #44481]  INFO -- : [957c36f0-d0d5-4cfa-88df-523105b18de9] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 12:04:14 +0530
+F, [2023-08-14T12:04:14.009545 #44481] FATAL -- : [957c36f0-d0d5-4cfa-88df-523105b18de9]   
+[957c36f0-d0d5-4cfa-88df-523105b18de9] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[957c36f0-d0d5-4cfa-88df-523105b18de9]   
+I, [2023-08-14T12:04:14.928173 #44481]  INFO -- : [39b075e4-39b6-484b-b7ee-eefbf703bfb1] Started GET "/packs/js/application-6075f95e1ee6321e4ae7.js" for 127.0.0.1 at 2023-08-14 12:04:14 +0530
+F, [2023-08-14T12:04:14.928429 #44481] FATAL -- : [39b075e4-39b6-484b-b7ee-eefbf703bfb1]   
+[39b075e4-39b6-484b-b7ee-eefbf703bfb1] ActionController::RoutingError (No route matches [GET] "/packs/js/application-6075f95e1ee6321e4ae7.js"):
+[39b075e4-39b6-484b-b7ee-eefbf703bfb1]   
+I, [2023-08-14T12:08:11.543837 #45370]  INFO -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] Started GET "/" for 127.0.0.1 at 2023-08-14 12:08:11 +0530
+I, [2023-08-14T12:08:11.545237 #45370]  INFO -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:08:12.700997 #45370]  INFO -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]   Rendered static/dashboard.html.slim within layouts/application (Duration: 328.1ms | Allocations: 44149)
+I, [2023-08-14T12:08:12.951526 #45370]  INFO -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]   Rendered layout layouts/application.html.slim (Duration: 578.6ms | Allocations: 87289)
+I, [2023-08-14T12:08:12.951676 #45370]  INFO -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] Completed 500 Internal Server Error in 1406ms (ActiveRecord: 638.2ms | Allocations: 100040)
+F, [2023-08-14T12:08:12.952063 #45370] FATAL -- : [d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]   
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] ActionView::Template::Error (Webpacker can't find application.js in /home/slowgamer/Desktop/rr/adnan-shaikh-assignment/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]     1: = csrf_meta_tags
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]     2: = csp_meta_tag
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]     3: = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]     4: = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6]   
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] app/views/layouts/_header_layout.html.slim:4
+[d2414bbd-5f13-4ab2-9f81-2bdc45b577e6] app/views/layouts/application.html.slim:6
+I, [2023-08-14T12:09:47.552356 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] Started GET "/" for 127.0.0.1 at 2023-08-14 12:09:47 +0530
+I, [2023-08-14T12:09:47.553908 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:09:48.721369 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141]   Rendered static/dashboard.html.slim within layouts/application (Duration: 315.9ms | Allocations: 44149)
+I, [2023-08-14T12:09:48.950120 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] [Webpacker] Compiling...
+I, [2023-08-14T12:09:50.066034 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] [Webpacker] Compiled all packs in /home/slowgamer/Desktop/rr/adnan-shaikh-assignment/public/packs
+E, [2023-08-14T12:09:50.066142 #45830] ERROR -- : [39eacdfb-c58b-4f37-9a99-40153428b141] [Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+I, [2023-08-14T12:09:50.066160 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] [Webpacker] Hash: 4780de9d56fee1835f1d
+Version: webpack 4.46.0
+Time: 547ms
+Built at: 08/14/2023 12:09:50 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5f960726b47474a44c2e.js    795 KiB  application  [emitted] [immutable]  application
+js/application-5f960726b47474a44c2e.js.map    839 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5f960726b47474a44c2e.js js/application-5f960726b47474a44c2e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 654 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+I, [2023-08-14T12:09:50.067053 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141]   Rendered layout layouts/application.html.slim (Duration: 1661.6ms | Allocations: 70213)
+I, [2023-08-14T12:09:50.067207 #45830]  INFO -- : [39eacdfb-c58b-4f37-9a99-40153428b141] Completed 500 Internal Server Error in 2513ms (ActiveRecord: 634.7ms | Allocations: 82963)
+F, [2023-08-14T12:09:50.067616 #45830] FATAL -- : [39eacdfb-c58b-4f37-9a99-40153428b141]   
+[39eacdfb-c58b-4f37-9a99-40153428b141] ActionView::Template::Error (Webpacker can't find application.js in /home/slowgamer/Desktop/rr/adnan-shaikh-assignment/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+[39eacdfb-c58b-4f37-9a99-40153428b141]     1: = csrf_meta_tags
+[39eacdfb-c58b-4f37-9a99-40153428b141]     2: = csp_meta_tag
+[39eacdfb-c58b-4f37-9a99-40153428b141]     3: = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+[39eacdfb-c58b-4f37-9a99-40153428b141]     4: = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+[39eacdfb-c58b-4f37-9a99-40153428b141]   
+[39eacdfb-c58b-4f37-9a99-40153428b141] app/views/layouts/_header_layout.html.slim:4
+[39eacdfb-c58b-4f37-9a99-40153428b141] app/views/layouts/application.html.slim:6
+I, [2023-08-14T12:11:16.357134 #46434]  INFO -- : [b532fb00-7f9e-47c4-882d-bcfb463a1463] Started GET "/" for 127.0.0.1 at 2023-08-14 12:11:16 +0530
+I, [2023-08-14T12:11:16.358947 #46434]  INFO -- : [b532fb00-7f9e-47c4-882d-bcfb463a1463] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:11:17.206844 #46434]  INFO -- : [b532fb00-7f9e-47c4-882d-bcfb463a1463]   Rendered static/dashboard.html.slim within layouts/application (Duration: 244.2ms | Allocations: 44149)
+I, [2023-08-14T12:11:17.443614 #46434]  INFO -- : [b532fb00-7f9e-47c4-882d-bcfb463a1463]   Rendered layout layouts/application.html.slim (Duration: 481.0ms | Allocations: 80858)
+I, [2023-08-14T12:11:17.443859 #46434]  INFO -- : [b532fb00-7f9e-47c4-882d-bcfb463a1463] Completed 200 OK in 1085ms (Views: 361.3ms | ActiveRecord: 459.6ms | Allocations: 93661)
+I, [2023-08-14T12:11:17.452350 #46434]  INFO -- : [6e1ce5c8-7757-4a55-886e-1516c1e31d10] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 12:11:17 +0530
+F, [2023-08-14T12:11:17.452804 #46434] FATAL -- : [6e1ce5c8-7757-4a55-886e-1516c1e31d10]   
+[6e1ce5c8-7757-4a55-886e-1516c1e31d10] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[6e1ce5c8-7757-4a55-886e-1516c1e31d10]   
+I, [2023-08-14T12:11:19.201699 #46434]  INFO -- : [174651d6-ded3-413c-b241-026e0ccfb24e] Started GET "/packs/js/application-5f960726b47474a44c2e.js" for 127.0.0.1 at 2023-08-14 12:11:19 +0530
+F, [2023-08-14T12:11:19.201985 #46434] FATAL -- : [174651d6-ded3-413c-b241-026e0ccfb24e]   
+[174651d6-ded3-413c-b241-026e0ccfb24e] ActionController::RoutingError (No route matches [GET] "/packs/js/application-5f960726b47474a44c2e.js"):
+[174651d6-ded3-413c-b241-026e0ccfb24e]   
+I, [2023-08-14T12:19:08.445282 #47572]  INFO -- : [e3b1acaf-7d0c-45f6-acbd-c1782636505e] Started GET "/" for 127.0.0.1 at 2023-08-14 12:19:08 +0530
+I, [2023-08-14T12:19:08.446994 #47572]  INFO -- : [e3b1acaf-7d0c-45f6-acbd-c1782636505e] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:19:09.423001 #47572]  INFO -- : [e3b1acaf-7d0c-45f6-acbd-c1782636505e]   Rendered static/dashboard.html.slim within layouts/application (Duration: 202.1ms | Allocations: 44148)
+I, [2023-08-14T12:19:09.674293 #47572]  INFO -- : [e3b1acaf-7d0c-45f6-acbd-c1782636505e]   Rendered layout layouts/application.html.slim (Duration: 453.5ms | Allocations: 98040)
+I, [2023-08-14T12:19:09.674499 #47572]  INFO -- : [e3b1acaf-7d0c-45f6-acbd-c1782636505e] Completed 200 OK in 1227ms (Views: 361.8ms | ActiveRecord: 454.1ms | Allocations: 110836)
+I, [2023-08-14T12:19:15.506324 #47572]  INFO -- : [536d514b-ff64-440e-bb06-07c3f7c84c2f] Started GET "/" for 127.0.0.1 at 2023-08-14 12:19:15 +0530
+I, [2023-08-14T12:19:15.506754 #47572]  INFO -- : [536d514b-ff64-440e-bb06-07c3f7c84c2f] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:19:15.668974 #47572]  INFO -- : [536d514b-ff64-440e-bb06-07c3f7c84c2f]   Rendered static/dashboard.html.slim within layouts/application (Duration: 83.3ms | Allocations: 1650)
+I, [2023-08-14T12:19:15.669716 #47572]  INFO -- : [536d514b-ff64-440e-bb06-07c3f7c84c2f]   Rendered layout layouts/application.html.slim (Duration: 84.0ms | Allocations: 2404)
+I, [2023-08-14T12:19:15.669878 #47572]  INFO -- : [536d514b-ff64-440e-bb06-07c3f7c84c2f] Completed 200 OK in 163ms (Views: 3.5ms | ActiveRecord: 141.4ms | Allocations: 3371)
+I, [2023-08-14T12:19:17.033500 #47572]  INFO -- : [6350b302-f17b-4897-8395-cfb625fb8cb8] Started GET "/" for 127.0.0.1 at 2023-08-14 12:19:17 +0530
+I, [2023-08-14T12:19:17.033911 #47572]  INFO -- : [6350b302-f17b-4897-8395-cfb625fb8cb8] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:19:17.277204 #47572]  INFO -- : [6350b302-f17b-4897-8395-cfb625fb8cb8]   Rendered static/dashboard.html.slim within layouts/application (Duration: 123.0ms | Allocations: 1650)
+I, [2023-08-14T12:19:17.277884 #47572]  INFO -- : [6350b302-f17b-4897-8395-cfb625fb8cb8]   Rendered layout layouts/application.html.slim (Duration: 123.7ms | Allocations: 2404)
+I, [2023-08-14T12:19:17.278027 #47572]  INFO -- : [6350b302-f17b-4897-8395-cfb625fb8cb8] Completed 200 OK in 244ms (Views: 3.4ms | ActiveRecord: 206.8ms | Allocations: 3367)
+I, [2023-08-14T12:19:21.364962 #47572]  INFO -- : [2531668a-4037-470a-b6fe-b074d167a6f0] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:19:21 +0530
+I, [2023-08-14T12:19:21.365505 #47572]  INFO -- : [2531668a-4037-470a-b6fe-b074d167a6f0] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:19:21.507080 #47572]  INFO -- : [2531668a-4037-470a-b6fe-b074d167a6f0] Completed 200 OK in 142ms (Views: 10.7ms | ActiveRecord: 111.1ms | Allocations: 22759)
+I, [2023-08-14T12:19:23.347824 #47572]  INFO -- : [33029c0d-5ca6-4952-bfec-ae0874761558] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:19:23 +0530
+I, [2023-08-14T12:19:23.348328 #47572]  INFO -- : [33029c0d-5ca6-4952-bfec-ae0874761558] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:19:23.400038 #47572]  INFO -- : [33029c0d-5ca6-4952-bfec-ae0874761558] Completed 200 OK in 52ms (Views: 2.5ms | ActiveRecord: 29.8ms | Allocations: 2535)
+I, [2023-08-14T12:19:29.808548 #47572]  INFO -- : [cd3c87ba-5869-490c-88ac-622ef9b7cf85] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:19:29 +0530
+I, [2023-08-14T12:19:29.809099 #47572]  INFO -- : [cd3c87ba-5869-490c-88ac-622ef9b7cf85] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:19:29.861225 #47572]  INFO -- : [cd3c87ba-5869-490c-88ac-622ef9b7cf85]   Rendered users_account/index.html.slim within layouts/application (Duration: 20.0ms | Allocations: 6797)
+I, [2023-08-14T12:19:29.862160 #47572]  INFO -- : [cd3c87ba-5869-490c-88ac-622ef9b7cf85]   Rendered layout layouts/application.html.slim (Duration: 20.9ms | Allocations: 7644)
+I, [2023-08-14T12:19:29.862350 #47572]  INFO -- : [cd3c87ba-5869-490c-88ac-622ef9b7cf85] Completed 200 OK in 53ms (Views: 4.3ms | ActiveRecord: 32.1ms | Allocations: 9253)
+I, [2023-08-14T12:19:34.580631 #47572]  INFO -- : [651290da-ffb9-415c-9197-ebe172db4818] Started GET "/" for 127.0.0.1 at 2023-08-14 12:19:34 +0530
+I, [2023-08-14T12:19:34.581173 #47572]  INFO -- : [651290da-ffb9-415c-9197-ebe172db4818] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:19:34.724444 #47572]  INFO -- : [651290da-ffb9-415c-9197-ebe172db4818]   Rendered static/dashboard.html.slim within layouts/application (Duration: 77.6ms | Allocations: 1650)
+I, [2023-08-14T12:19:34.725191 #47572]  INFO -- : [651290da-ffb9-415c-9197-ebe172db4818]   Rendered layout layouts/application.html.slim (Duration: 78.3ms | Allocations: 2403)
+I, [2023-08-14T12:19:34.725342 #47572]  INFO -- : [651290da-ffb9-415c-9197-ebe172db4818] Completed 200 OK in 144ms (Views: 3.8ms | ActiveRecord: 123.1ms | Allocations: 3335)
+I, [2023-08-14T12:21:16.772791 #47572]  INFO -- : [8ed974d7-b4f8-4129-81e5-a074282857fd] Started GET "/" for 127.0.0.1 at 2023-08-14 12:21:16 +0530
+I, [2023-08-14T12:21:16.773204 #47572]  INFO -- : [8ed974d7-b4f8-4129-81e5-a074282857fd] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:21:16.925022 #47572]  INFO -- : [8ed974d7-b4f8-4129-81e5-a074282857fd]   Rendered static/dashboard.html.slim within layouts/application (Duration: 77.1ms | Allocations: 1649)
+I, [2023-08-14T12:21:16.925709 #47572]  INFO -- : [8ed974d7-b4f8-4129-81e5-a074282857fd]   Rendered layout layouts/application.html.slim (Duration: 77.8ms | Allocations: 2402)
+I, [2023-08-14T12:21:16.925851 #47572]  INFO -- : [8ed974d7-b4f8-4129-81e5-a074282857fd] Completed 200 OK in 153ms (Views: 3.1ms | ActiveRecord: 133.2ms | Allocations: 3328)
+I, [2023-08-14T12:21:17.610372 #47572]  INFO -- : [46040b78-7a5c-4811-8318-963505a8fb07] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:21:17 +0530
+I, [2023-08-14T12:21:17.610842 #47572]  INFO -- : [46040b78-7a5c-4811-8318-963505a8fb07] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:21:17.662198 #47572]  INFO -- : [46040b78-7a5c-4811-8318-963505a8fb07]   Rendered users_account/index.html.slim within layouts/application (Duration: 20.3ms | Allocations: 147)
+I, [2023-08-14T12:21:17.662993 #47572]  INFO -- : [46040b78-7a5c-4811-8318-963505a8fb07]   Rendered layout layouts/application.html.slim (Duration: 21.1ms | Allocations: 908)
+I, [2023-08-14T12:21:17.663147 #47572]  INFO -- : [46040b78-7a5c-4811-8318-963505a8fb07] Completed 200 OK in 52ms (Views: 1.5ms | ActiveRecord: 34.6ms | Allocations: 1799)
+I, [2023-08-14T12:21:53.936061 #48272]  INFO -- : [e9a7a331-02ea-4526-a380-2197a61d49bf] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:21:53 +0530
+I, [2023-08-14T12:21:53.937062 #48272]  INFO -- : [e9a7a331-02ea-4526-a380-2197a61d49bf] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:21:54.482900 #48272]  INFO -- : [e9a7a331-02ea-4526-a380-2197a61d49bf]   Rendered users_account/index.html.slim within layouts/application (Duration: 51.2ms | Allocations: 14599)
+I, [2023-08-14T12:21:54.739945 #48272]  INFO -- : [e9a7a331-02ea-4526-a380-2197a61d49bf]   Rendered layout layouts/application.html.slim (Duration: 308.3ms | Allocations: 68519)
+I, [2023-08-14T12:21:54.740162 #48272]  INFO -- : [e9a7a331-02ea-4526-a380-2197a61d49bf] Completed 200 OK in 803ms (Views: 270.4ms | ActiveRecord: 329.0ms | Allocations: 81888)
+I, [2023-08-14T12:21:57.058020 #48272]  INFO -- : [6172e2ec-830b-4a72-930e-76a8f30af642] Started GET "/" for 127.0.0.1 at 2023-08-14 12:21:57 +0530
+I, [2023-08-14T12:21:57.058558 #48272]  INFO -- : [6172e2ec-830b-4a72-930e-76a8f30af642] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:21:57.330658 #48272]  INFO -- : [6172e2ec-830b-4a72-930e-76a8f30af642]   Rendered static/dashboard.html.slim within layouts/application (Duration: 180.7ms | Allocations: 35502)
+I, [2023-08-14T12:21:57.331413 #48272]  INFO -- : [6172e2ec-830b-4a72-930e-76a8f30af642]   Rendered layout layouts/application.html.slim (Duration: 181.5ms | Allocations: 36334)
+I, [2023-08-14T12:21:57.331563 #48272]  INFO -- : [6172e2ec-830b-4a72-930e-76a8f30af642] Completed 200 OK in 273ms (Views: 106.3ms | ActiveRecord: 130.6ms | Allocations: 38235)
+I, [2023-08-14T12:21:58.004313 #48272]  INFO -- : [05869c1e-37f2-4e5c-a3f1-942337933a1e] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:21:58 +0530
+I, [2023-08-14T12:21:58.004867 #48272]  INFO -- : [05869c1e-37f2-4e5c-a3f1-942337933a1e] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:21:58.101871 #48272]  INFO -- : [05869c1e-37f2-4e5c-a3f1-942337933a1e]   Rendered users_account/index.html.slim within layouts/application (Duration: 59.7ms | Allocations: 147)
+I, [2023-08-14T12:21:58.102781 #48272]  INFO -- : [05869c1e-37f2-4e5c-a3f1-942337933a1e]   Rendered layout layouts/application.html.slim (Duration: 60.7ms | Allocations: 909)
+I, [2023-08-14T12:21:58.102975 #48272]  INFO -- : [05869c1e-37f2-4e5c-a3f1-942337933a1e] Completed 200 OK in 98ms (Views: 1.6ms | ActiveRecord: 76.3ms | Allocations: 1826)
+I, [2023-08-14T12:22:31.114514 #48272]  INFO -- : [5b1ac8f9-1100-45bc-822c-71b4d6c35773] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:22:31 +0530
+I, [2023-08-14T12:22:31.115035 #48272]  INFO -- : [5b1ac8f9-1100-45bc-822c-71b4d6c35773] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:22:31.162851 #48272]  INFO -- : [5b1ac8f9-1100-45bc-822c-71b4d6c35773]   Rendered users_account/index.html.slim within layouts/application (Duration: 15.2ms | Allocations: 147)
+I, [2023-08-14T12:22:31.163536 #48272]  INFO -- : [5b1ac8f9-1100-45bc-822c-71b4d6c35773]   Rendered layout layouts/application.html.slim (Duration: 15.9ms | Allocations: 908)
+I, [2023-08-14T12:22:31.163681 #48272]  INFO -- : [5b1ac8f9-1100-45bc-822c-71b4d6c35773] Completed 200 OK in 49ms (Views: 1.3ms | ActiveRecord: 29.6ms | Allocations: 1788)
+I, [2023-08-14T12:22:31.956598 #48272]  INFO -- : [99a0badb-319a-4507-ab9f-8a13ddb32880] Started GET "/" for 127.0.0.1 at 2023-08-14 12:22:31 +0530
+I, [2023-08-14T12:22:31.957071 #48272]  INFO -- : [99a0badb-319a-4507-ab9f-8a13ddb32880] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:22:32.100968 #48272]  INFO -- : [99a0badb-319a-4507-ab9f-8a13ddb32880]   Rendered static/dashboard.html.slim within layouts/application (Duration: 78.4ms | Allocations: 1649)
+I, [2023-08-14T12:22:32.101658 #48272]  INFO -- : [99a0badb-319a-4507-ab9f-8a13ddb32880]   Rendered layout layouts/application.html.slim (Duration: 79.1ms | Allocations: 2402)
+I, [2023-08-14T12:22:32.101804 #48272]  INFO -- : [99a0badb-319a-4507-ab9f-8a13ddb32880] Completed 200 OK in 145ms (Views: 3.5ms | ActiveRecord: 124.8ms | Allocations: 3367)
+I, [2023-08-14T12:22:49.845539 #48680]  INFO -- : [d5451840-b68a-4395-b9a9-96944331651a] Started GET "/" for 127.0.0.1 at 2023-08-14 12:22:49 +0530
+I, [2023-08-14T12:22:49.846583 #48680]  INFO -- : [d5451840-b68a-4395-b9a9-96944331651a] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:22:50.513439 #48680]  INFO -- : [d5451840-b68a-4395-b9a9-96944331651a]   Rendered static/dashboard.html.slim within layouts/application (Duration: 196.4ms | Allocations: 44156)
+I, [2023-08-14T12:22:50.767334 #48680]  INFO -- : [d5451840-b68a-4395-b9a9-96944331651a]   Rendered layout layouts/application.html.slim (Duration: 450.3ms | Allocations: 98035)
+I, [2023-08-14T12:22:50.767546 #48680]  INFO -- : [d5451840-b68a-4395-b9a9-96944331651a] Completed 200 OK in 921ms (Views: 354.6ms | ActiveRecord: 366.1ms | Allocations: 110843)
+I, [2023-08-14T12:22:54.627036 #48680]  INFO -- : [2ad8c970-b97a-458a-8c0f-7ae0d3ebeaf4] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:22:54 +0530
+I, [2023-08-14T12:22:54.627660 #48680]  INFO -- : [2ad8c970-b97a-458a-8c0f-7ae0d3ebeaf4] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:22:54.727585 #48680]  INFO -- : [2ad8c970-b97a-458a-8c0f-7ae0d3ebeaf4]   Rendered users_account/index.html.slim within layouts/application (Duration: 19.1ms | Allocations: 6793)
+I, [2023-08-14T12:22:54.728585 #48680]  INFO -- : [2ad8c970-b97a-458a-8c0f-7ae0d3ebeaf4]   Rendered layout layouts/application.html.slim (Duration: 20.2ms | Allocations: 7641)
+I, [2023-08-14T12:22:54.728764 #48680]  INFO -- : [2ad8c970-b97a-458a-8c0f-7ae0d3ebeaf4] Completed 200 OK in 101ms (Views: 4.5ms | ActiveRecord: 67.7ms | Allocations: 9303)
+I, [2023-08-14T12:23:21.173233 #49032]  INFO -- : [5a121675-92cc-4ca2-b08d-6979d58306ff] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:23:21 +0530
+I, [2023-08-14T12:23:21.174294 #49032]  INFO -- : [5a121675-92cc-4ca2-b08d-6979d58306ff] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:23:21.655830 #49032]  INFO -- : [5a121675-92cc-4ca2-b08d-6979d58306ff]   Rendered users_account/index.html.slim within layouts/application (Duration: 24.8ms | Allocations: 14599)
+I, [2023-08-14T12:23:21.906969 #49032]  INFO -- : [5a121675-92cc-4ca2-b08d-6979d58306ff]   Rendered layout layouts/application.html.slim (Duration: 276.0ms | Allocations: 68513)
+I, [2023-08-14T12:23:21.907187 #49032]  INFO -- : [5a121675-92cc-4ca2-b08d-6979d58306ff] Completed 200 OK in 733ms (Views: 264.5ms | ActiveRecord: 273.0ms | Allocations: 81887)
+I, [2023-08-14T12:23:23.264153 #49032]  INFO -- : [7b44de2e-388c-4ec2-aa37-f8651885d2ff] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:23 +0530
+I, [2023-08-14T12:23:23.264717 #49032]  INFO -- : [7b44de2e-388c-4ec2-aa37-f8651885d2ff] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:23.518804 #49032]  INFO -- : [7b44de2e-388c-4ec2-aa37-f8651885d2ff]   Rendered static/dashboard.html.slim within layouts/application (Duration: 173.0ms | Allocations: 35502)
+I, [2023-08-14T12:23:23.519547 #49032]  INFO -- : [7b44de2e-388c-4ec2-aa37-f8651885d2ff]   Rendered layout layouts/application.html.slim (Duration: 173.8ms | Allocations: 36334)
+I, [2023-08-14T12:23:23.519703 #49032]  INFO -- : [7b44de2e-388c-4ec2-aa37-f8651885d2ff] Completed 200 OK in 255ms (Views: 99.9ms | ActiveRecord: 123.1ms | Allocations: 38251)
+I, [2023-08-14T12:23:24.123440 #49032]  INFO -- : [1a2c207d-7b21-4a2c-bb02-ae9eb635457b] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:23:24 +0530
+I, [2023-08-14T12:23:24.124113 #49032]  INFO -- : [1a2c207d-7b21-4a2c-bb02-ae9eb635457b] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:23:24.172762 #49032]  INFO -- : [1a2c207d-7b21-4a2c-bb02-ae9eb635457b]   Rendered users_account/index.html.slim within layouts/application (Duration: 16.2ms | Allocations: 150)
+I, [2023-08-14T12:23:24.173599 #49032]  INFO -- : [1a2c207d-7b21-4a2c-bb02-ae9eb635457b]   Rendered layout layouts/application.html.slim (Duration: 17.1ms | Allocations: 912)
+I, [2023-08-14T12:23:24.173746 #49032]  INFO -- : [1a2c207d-7b21-4a2c-bb02-ae9eb635457b] Completed 200 OK in 50ms (Views: 1.5ms | ActiveRecord: 30.4ms | Allocations: 1815)
+I, [2023-08-14T12:23:25.145265 #49032]  INFO -- : [f39ead1a-117a-47bf-bc6f-8ed3b10f03eb] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:25 +0530
+I, [2023-08-14T12:23:25.145847 #49032]  INFO -- : [f39ead1a-117a-47bf-bc6f-8ed3b10f03eb] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:25.288413 #49032]  INFO -- : [f39ead1a-117a-47bf-bc6f-8ed3b10f03eb]   Rendered static/dashboard.html.slim within layouts/application (Duration: 78.7ms | Allocations: 1650)
+I, [2023-08-14T12:23:25.289154 #49032]  INFO -- : [f39ead1a-117a-47bf-bc6f-8ed3b10f03eb]   Rendered layout layouts/application.html.slim (Duration: 79.5ms | Allocations: 2404)
+I, [2023-08-14T12:23:25.289336 #49032]  INFO -- : [f39ead1a-117a-47bf-bc6f-8ed3b10f03eb] Completed 200 OK in 143ms (Views: 4.7ms | ActiveRecord: 121.8ms | Allocations: 3352)
+I, [2023-08-14T12:23:27.020187 #49032]  INFO -- : [633c7ab8-733e-40c2-ae74-eb589db1ec1e] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:23:27 +0530
+I, [2023-08-14T12:23:27.020693 #49032]  INFO -- : [633c7ab8-733e-40c2-ae74-eb589db1ec1e] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:23:27.122419 #49032]  INFO -- : [633c7ab8-733e-40c2-ae74-eb589db1ec1e]   Rendered users_account/index.html.slim within layouts/application (Duration: 19.8ms | Allocations: 147)
+I, [2023-08-14T12:23:27.123135 #49032]  INFO -- : [633c7ab8-733e-40c2-ae74-eb589db1ec1e]   Rendered layout layouts/application.html.slim (Duration: 20.6ms | Allocations: 909)
+I, [2023-08-14T12:23:27.123281 #49032]  INFO -- : [633c7ab8-733e-40c2-ae74-eb589db1ec1e] Completed 200 OK in 103ms (Views: 1.4ms | ActiveRecord: 60.3ms | Allocations: 1811)
+I, [2023-08-14T12:23:27.585983 #49032]  INFO -- : [5d559026-b9b6-4a5a-85af-e2d37be7c6d9] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:27 +0530
+I, [2023-08-14T12:23:27.586591 #49032]  INFO -- : [5d559026-b9b6-4a5a-85af-e2d37be7c6d9] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:27.729358 #49032]  INFO -- : [5d559026-b9b6-4a5a-85af-e2d37be7c6d9]   Rendered static/dashboard.html.slim within layouts/application (Duration: 78.6ms | Allocations: 1649)
+I, [2023-08-14T12:23:27.730070 #49032]  INFO -- : [5d559026-b9b6-4a5a-85af-e2d37be7c6d9]   Rendered layout layouts/application.html.slim (Duration: 79.3ms | Allocations: 2402)
+I, [2023-08-14T12:23:27.730225 #49032]  INFO -- : [5d559026-b9b6-4a5a-85af-e2d37be7c6d9] Completed 200 OK in 144ms (Views: 3.7ms | ActiveRecord: 122.7ms | Allocations: 3351)
+I, [2023-08-14T12:23:28.387304 #49032]  INFO -- : [56bbccd0-4999-4737-8d9f-881fad3cd026] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:23:28 +0530
+I, [2023-08-14T12:23:28.387904 #49032]  INFO -- : [56bbccd0-4999-4737-8d9f-881fad3cd026] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:23:28.433945 #49032]  INFO -- : [56bbccd0-4999-4737-8d9f-881fad3cd026]   Rendered users_account/index.html.slim within layouts/application (Duration: 15.1ms | Allocations: 147)
+I, [2023-08-14T12:23:28.434703 #49032]  INFO -- : [56bbccd0-4999-4737-8d9f-881fad3cd026]   Rendered layout layouts/application.html.slim (Duration: 15.9ms | Allocations: 908)
+I, [2023-08-14T12:23:28.434843 #49032]  INFO -- : [56bbccd0-4999-4737-8d9f-881fad3cd026] Completed 200 OK in 47ms (Views: 1.4ms | ActiveRecord: 29.2ms | Allocations: 1813)
+I, [2023-08-14T12:23:29.353973 #49032]  INFO -- : [55dc66d8-a486-4afc-b144-577d5e07fddb] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:29 +0530
+I, [2023-08-14T12:23:29.354581 #49032]  INFO -- : [55dc66d8-a486-4afc-b144-577d5e07fddb] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:29.501035 #49032]  INFO -- : [55dc66d8-a486-4afc-b144-577d5e07fddb]   Rendered static/dashboard.html.slim within layouts/application (Duration: 82.3ms | Allocations: 1649)
+I, [2023-08-14T12:23:29.501767 #49032]  INFO -- : [55dc66d8-a486-4afc-b144-577d5e07fddb]   Rendered layout layouts/application.html.slim (Duration: 83.0ms | Allocations: 2402)
+I, [2023-08-14T12:23:29.501925 #49032]  INFO -- : [55dc66d8-a486-4afc-b144-577d5e07fddb] Completed 200 OK in 147ms (Views: 3.8ms | ActiveRecord: 126.5ms | Allocations: 3321)
+I, [2023-08-14T12:23:29.784284 #49032]  INFO -- : [21812989-83f4-4c1e-a7ff-6d487eb9e80d] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:29 +0530
+I, [2023-08-14T12:23:29.784798 #49032]  INFO -- : [21812989-83f4-4c1e-a7ff-6d487eb9e80d] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:29.912217 #49032]  INFO -- : [21812989-83f4-4c1e-a7ff-6d487eb9e80d] Completed 200 OK in 127ms (Views: 10.9ms | ActiveRecord: 97.6ms | Allocations: 22677)
+I, [2023-08-14T12:23:29.914154 #49032]  INFO -- : [73a4dfc5-84a6-45cf-898b-419715c45d5a] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:29 +0530
+I, [2023-08-14T12:23:29.914598 #49032]  INFO -- : [73a4dfc5-84a6-45cf-898b-419715c45d5a] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:29.965401 #49032]  INFO -- : [73a4dfc5-84a6-45cf-898b-419715c45d5a] Completed 200 OK in 51ms (Views: 2.9ms | ActiveRecord: 32.2ms | Allocations: 2532)
+I, [2023-08-14T12:23:29.967366 #49032]  INFO -- : [d53a6ed1-ea8d-491f-98f5-b251ce5c6024] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:29 +0530
+I, [2023-08-14T12:23:29.967842 #49032]  INFO -- : [d53a6ed1-ea8d-491f-98f5-b251ce5c6024] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.086523 #49032]  INFO -- : [d53a6ed1-ea8d-491f-98f5-b251ce5c6024] Completed 200 OK in 119ms (Views: 2.4ms | ActiveRecord: 76.7ms | Allocations: 2532)
+I, [2023-08-14T12:23:30.088227 #49032]  INFO -- : [be6c12f1-22c5-46d5-b60f-bdcf8b5e04b2] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.088665 #49032]  INFO -- : [be6c12f1-22c5-46d5-b60f-bdcf8b5e04b2] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.188846 #49032]  INFO -- : [be6c12f1-22c5-46d5-b60f-bdcf8b5e04b2] Completed 200 OK in 100ms (Views: 2.6ms | ActiveRecord: 61.5ms | Allocations: 2536)
+I, [2023-08-14T12:23:30.190741 #49032]  INFO -- : [99c7fcda-d7af-4815-993e-e88ff207d3c8] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.191250 #49032]  INFO -- : [99c7fcda-d7af-4815-993e-e88ff207d3c8] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.241476 #49032]  INFO -- : [99c7fcda-d7af-4815-993e-e88ff207d3c8] Completed 200 OK in 50ms (Views: 2.9ms | ActiveRecord: 30.5ms | Allocations: 2532)
+I, [2023-08-14T12:23:30.243671 #49032]  INFO -- : [a6960dea-c915-4daa-81f8-3bcf70780045] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.244152 #49032]  INFO -- : [a6960dea-c915-4daa-81f8-3bcf70780045] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.296208 #49032]  INFO -- : [a6960dea-c915-4daa-81f8-3bcf70780045] Completed 200 OK in 52ms (Views: 7.4ms | ActiveRecord: 28.8ms | Allocations: 2534)
+I, [2023-08-14T12:23:30.298076 #49032]  INFO -- : [2bed87af-e1ce-4fe4-9e37-881a1b553f7d] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.298530 #49032]  INFO -- : [2bed87af-e1ce-4fe4-9e37-881a1b553f7d] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.346430 #49032]  INFO -- : [2bed87af-e1ce-4fe4-9e37-881a1b553f7d] Completed 200 OK in 48ms (Views: 2.8ms | ActiveRecord: 29.4ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.348409 #49032]  INFO -- : [f7c94cf7-43e6-4c15-979f-f79097a877cb] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.348795 #49032]  INFO -- : [f7c94cf7-43e6-4c15-979f-f79097a877cb] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.396632 #49032]  INFO -- : [f7c94cf7-43e6-4c15-979f-f79097a877cb] Completed 200 OK in 48ms (Views: 2.8ms | ActiveRecord: 29.6ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.398524 #49032]  INFO -- : [3e7b6b78-7d79-43bd-bfd0-f5f07aece354] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.398990 #49032]  INFO -- : [3e7b6b78-7d79-43bd-bfd0-f5f07aece354] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.446060 #49032]  INFO -- : [3e7b6b78-7d79-43bd-bfd0-f5f07aece354] Completed 200 OK in 47ms (Views: 2.2ms | ActiveRecord: 29.2ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.447749 #49032]  INFO -- : [65e80553-ba7a-49f5-81ae-79e0dffcd6ad] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.448130 #49032]  INFO -- : [65e80553-ba7a-49f5-81ae-79e0dffcd6ad] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.496254 #49032]  INFO -- : [65e80553-ba7a-49f5-81ae-79e0dffcd6ad] Completed 200 OK in 48ms (Views: 2.3ms | ActiveRecord: 30.3ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.497877 #49032]  INFO -- : [acd8e751-4104-441a-81dd-c9c45d908ae9] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.498271 #49032]  INFO -- : [acd8e751-4104-441a-81dd-c9c45d908ae9] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.545478 #49032]  INFO -- : [acd8e751-4104-441a-81dd-c9c45d908ae9] Completed 200 OK in 47ms (Views: 2.2ms | ActiveRecord: 29.6ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.547054 #49032]  INFO -- : [b4ff2887-b6fa-4655-ab02-499b9fed5eff] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.547434 #49032]  INFO -- : [b4ff2887-b6fa-4655-ab02-499b9fed5eff] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.599721 #49032]  INFO -- : [b4ff2887-b6fa-4655-ab02-499b9fed5eff] Completed 200 OK in 52ms (Views: 2.5ms | ActiveRecord: 33.1ms | Allocations: 2534)
+I, [2023-08-14T12:23:30.601621 #49032]  INFO -- : [4f070e62-aa60-431b-87cc-e19f7b7fb1f3] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.602039 #49032]  INFO -- : [4f070e62-aa60-431b-87cc-e19f7b7fb1f3] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.649581 #49032]  INFO -- : [4f070e62-aa60-431b-87cc-e19f7b7fb1f3] Completed 200 OK in 47ms (Views: 2.3ms | ActiveRecord: 29.4ms | Allocations: 2533)
+I, [2023-08-14T12:23:30.651335 #49032]  INFO -- : [e83f4e62-8f04-474f-a12b-f425b3ffb3db] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:30 +0530
+I, [2023-08-14T12:23:30.651725 #49032]  INFO -- : [e83f4e62-8f04-474f-a12b-f425b3ffb3db] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:30.728007 #49032]  INFO -- : [e83f4e62-8f04-474f-a12b-f425b3ffb3db] Completed 200 OK in 76ms (Views: 2.3ms | ActiveRecord: 30.4ms | Allocations: 2533)
+I, [2023-08-14T12:23:33.983123 #49032]  INFO -- : [8e859e9f-8559-499a-ac7e-c66acdacabaa] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:33 +0530
+I, [2023-08-14T12:23:33.983559 #49032]  INFO -- : [8e859e9f-8559-499a-ac7e-c66acdacabaa] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.040545 #49032]  INFO -- : [8e859e9f-8559-499a-ac7e-c66acdacabaa] Completed 200 OK in 57ms (Views: 2.5ms | ActiveRecord: 32.5ms | Allocations: 2529)
+I, [2023-08-14T12:23:34.042610 #49032]  INFO -- : [fda92c01-fb28-4b3e-be29-f764af41077e] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.043085 #49032]  INFO -- : [fda92c01-fb28-4b3e-be29-f764af41077e] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.092765 #49032]  INFO -- : [fda92c01-fb28-4b3e-be29-f764af41077e] Completed 200 OK in 50ms (Views: 2.5ms | ActiveRecord: 29.6ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.094564 #49032]  INFO -- : [f52659c9-45d8-4f7a-a1fa-0f687c7c0367] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.094990 #49032]  INFO -- : [f52659c9-45d8-4f7a-a1fa-0f687c7c0367] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.142262 #49032]  INFO -- : [f52659c9-45d8-4f7a-a1fa-0f687c7c0367] Completed 200 OK in 47ms (Views: 2.4ms | ActiveRecord: 29.3ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.144240 #49032]  INFO -- : [ce53712c-e71e-4be5-bad2-3ba129dbf090] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.144747 #49032]  INFO -- : [ce53712c-e71e-4be5-bad2-3ba129dbf090] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.194775 #49032]  INFO -- : [ce53712c-e71e-4be5-bad2-3ba129dbf090] Completed 200 OK in 50ms (Views: 3.0ms | ActiveRecord: 30.2ms | Allocations: 2531)
+I, [2023-08-14T12:23:34.196548 #49032]  INFO -- : [efdce52b-03e4-434d-b354-d2eaa719e0d8] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.196958 #49032]  INFO -- : [efdce52b-03e4-434d-b354-d2eaa719e0d8] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.245833 #49032]  INFO -- : [efdce52b-03e4-434d-b354-d2eaa719e0d8] Completed 200 OK in 49ms (Views: 3.1ms | ActiveRecord: 29.7ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.247559 #49032]  INFO -- : [6b0f7545-7e08-4d8b-9851-6bc99f4f4e46] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.247978 #49032]  INFO -- : [6b0f7545-7e08-4d8b-9851-6bc99f4f4e46] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.301662 #49032]  INFO -- : [6b0f7545-7e08-4d8b-9851-6bc99f4f4e46] Completed 200 OK in 54ms (Views: 2.9ms | ActiveRecord: 29.3ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.303823 #49032]  INFO -- : [f2aca1a4-3b1a-4d88-b259-98d7aa44eeb0] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.304317 #49032]  INFO -- : [f2aca1a4-3b1a-4d88-b259-98d7aa44eeb0] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.355809 #49032]  INFO -- : [f2aca1a4-3b1a-4d88-b259-98d7aa44eeb0] Completed 200 OK in 51ms (Views: 2.7ms | ActiveRecord: 33.0ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.357420 #49032]  INFO -- : [d1c0e52b-6dc9-440c-ad62-5bdeb7a0c14c] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.357811 #49032]  INFO -- : [d1c0e52b-6dc9-440c-ad62-5bdeb7a0c14c] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.406836 #49032]  INFO -- : [d1c0e52b-6dc9-440c-ad62-5bdeb7a0c14c] Completed 200 OK in 49ms (Views: 2.5ms | ActiveRecord: 31.2ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.408500 #49032]  INFO -- : [3661b84a-eb82-46f3-9477-75b0d9aa988e] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.409003 #49032]  INFO -- : [3661b84a-eb82-46f3-9477-75b0d9aa988e] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.461854 #49032]  INFO -- : [3661b84a-eb82-46f3-9477-75b0d9aa988e] Completed 200 OK in 53ms (Views: 2.9ms | ActiveRecord: 34.7ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.463563 #49032]  INFO -- : [38745197-95f1-4436-9752-b19544eaf40c] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.463983 #49032]  INFO -- : [38745197-95f1-4436-9752-b19544eaf40c] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.514819 #49032]  INFO -- : [38745197-95f1-4436-9752-b19544eaf40c] Completed 200 OK in 51ms (Views: 2.8ms | ActiveRecord: 31.7ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.516730 #49032]  INFO -- : [b1787d29-12bf-4d95-b81a-78992a36c95f] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.517178 #49032]  INFO -- : [b1787d29-12bf-4d95-b81a-78992a36c95f] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.567205 #49032]  INFO -- : [b1787d29-12bf-4d95-b81a-78992a36c95f] Completed 200 OK in 50ms (Views: 2.6ms | ActiveRecord: 29.5ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.569185 #49032]  INFO -- : [b03af666-cee6-4923-9812-912f6342f14f] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.569634 #49032]  INFO -- : [b03af666-cee6-4923-9812-912f6342f14f] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.618103 #49032]  INFO -- : [b03af666-cee6-4923-9812-912f6342f14f] Completed 200 OK in 48ms (Views: 2.3ms | ActiveRecord: 29.2ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.619818 #49032]  INFO -- : [67669c48-2970-4b96-928c-1c9113da759f] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.620185 #49032]  INFO -- : [67669c48-2970-4b96-928c-1c9113da759f] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.680380 #49032]  INFO -- : [67669c48-2970-4b96-928c-1c9113da759f] Completed 200 OK in 60ms (Views: 2.8ms | ActiveRecord: 38.8ms | Allocations: 2527)
+I, [2023-08-14T12:23:34.682422 #49032]  INFO -- : [6be8371e-e715-47a6-8588-e2d7a84ccbf6] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:34 +0530
+I, [2023-08-14T12:23:34.682799 #49032]  INFO -- : [6be8371e-e715-47a6-8588-e2d7a84ccbf6] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:34.730885 #49032]  INFO -- : [6be8371e-e715-47a6-8588-e2d7a84ccbf6] Completed 200 OK in 48ms (Views: 2.9ms | ActiveRecord: 29.7ms | Allocations: 2527)
+I, [2023-08-14T12:23:36.085304 #49032]  INFO -- : [7826b5b6-0906-454e-aecd-10a23df88dfd] Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-08-14 12:23:36 +0530
+I, [2023-08-14T12:23:36.085908 #49032]  INFO -- : [7826b5b6-0906-454e-aecd-10a23df88dfd] Processing by Devise::SessionsController#destroy as HTML
+I, [2023-08-14T12:23:36.085941 #49032]  INFO -- : [7826b5b6-0906-454e-aecd-10a23df88dfd]   Parameters: {"authenticity_token"=>"[FILTERED]"}
+I, [2023-08-14T12:23:36.118536 #49032]  INFO -- : [7826b5b6-0906-454e-aecd-10a23df88dfd] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T12:23:36.118651 #49032]  INFO -- : [7826b5b6-0906-454e-aecd-10a23df88dfd] Completed 302 Found in 33ms (ActiveRecord: 14.4ms | Allocations: 2083)
+I, [2023-08-14T12:23:36.121159 #49032]  INFO -- : [9a7bbfe5-4fa9-46fa-b53c-a6d80d255ba4] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:36 +0530
+I, [2023-08-14T12:23:36.121525 #49032]  INFO -- : [9a7bbfe5-4fa9-46fa-b53c-a6d80d255ba4] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:36.122533 #49032]  INFO -- : [9a7bbfe5-4fa9-46fa-b53c-a6d80d255ba4] Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+I, [2023-08-14T12:23:36.125293 #49032]  INFO -- : [bd72bcc2-568f-4267-a866-1b76fb4e5be1] Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-14 12:23:36 +0530
+I, [2023-08-14T12:23:36.125652 #49032]  INFO -- : [bd72bcc2-568f-4267-a866-1b76fb4e5be1] Processing by Devise::SessionsController#new as HTML
+I, [2023-08-14T12:23:36.133352 #49032]  INFO -- : [bd72bcc2-568f-4267-a866-1b76fb4e5be1]   Rendered devise/sessions/new.html.slim within layouts/application (Duration: 5.8ms | Allocations: 8973)
+I, [2023-08-14T12:23:36.134027 #49032]  INFO -- : [bd72bcc2-568f-4267-a866-1b76fb4e5be1]   Rendered layout layouts/application.html.slim (Duration: 6.5ms | Allocations: 9697)
+I, [2023-08-14T12:23:36.134205 #49032]  INFO -- : [bd72bcc2-568f-4267-a866-1b76fb4e5be1] Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 11624)
+I, [2023-08-14T12:23:37.650263 #49032]  INFO -- : [06ea4dec-376a-4b20-ab0f-7fe04048f95e] Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-14 12:23:37 +0530
+I, [2023-08-14T12:23:37.651097 #49032]  INFO -- : [06ea4dec-376a-4b20-ab0f-7fe04048f95e] Processing by Devise::RegistrationsController#new as HTML
+I, [2023-08-14T12:23:37.656727 #49032]  INFO -- : [06ea4dec-376a-4b20-ab0f-7fe04048f95e]   Rendered devise/registrations/new.html.slim within layouts/application (Duration: 3.8ms | Allocations: 7240)
+I, [2023-08-14T12:23:37.657311 #49032]  INFO -- : [06ea4dec-376a-4b20-ab0f-7fe04048f95e]   Rendered layout layouts/application.html.slim (Duration: 4.4ms | Allocations: 7950)
+I, [2023-08-14T12:23:37.657463 #49032]  INFO -- : [06ea4dec-376a-4b20-ab0f-7fe04048f95e] Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 9335)
+I, [2023-08-14T12:23:47.331951 #49032]  INFO -- : [d5801745-f473-488c-8981-2d7eac2a4baf] Started POST "/users" for 127.0.0.1 at 2023-08-14 12:23:47 +0530
+I, [2023-08-14T12:23:47.332451 #49032]  INFO -- : [d5801745-f473-488c-8981-2d7eac2a4baf] Processing by Devise::RegistrationsController#create as HTML
+I, [2023-08-14T12:23:47.332480 #49032]  INFO -- : [d5801745-f473-488c-8981-2d7eac2a4baf]   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"at2@gmailc.om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+I, [2023-08-14T12:23:47.603091 #49032]  INFO -- : [d5801745-f473-488c-8981-2d7eac2a4baf] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T12:23:47.603205 #49032]  INFO -- : [d5801745-f473-488c-8981-2d7eac2a4baf] Completed 302 Found in 271ms (ActiveRecord: 59.1ms | Allocations: 3718)
+I, [2023-08-14T12:23:47.605982 #49032]  INFO -- : [f179f858-0ae9-492e-bacf-7a1016b5ccb6] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:47 +0530
+I, [2023-08-14T12:23:47.606357 #49032]  INFO -- : [f179f858-0ae9-492e-bacf-7a1016b5ccb6] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:47.746532 #49032]  INFO -- : [f179f858-0ae9-492e-bacf-7a1016b5ccb6]   Rendered static/dashboard.html.slim within layouts/application (Duration: 76.9ms | Allocations: 2165)
+I, [2023-08-14T12:23:47.747292 #49032]  INFO -- : [f179f858-0ae9-492e-bacf-7a1016b5ccb6]   Rendered layout layouts/application.html.slim (Duration: 77.7ms | Allocations: 2923)
+I, [2023-08-14T12:23:47.747450 #49032]  INFO -- : [f179f858-0ae9-492e-bacf-7a1016b5ccb6] Completed 200 OK in 141ms (Views: 3.5ms | ActiveRecord: 120.5ms | Allocations: 3873)
+I, [2023-08-14T12:23:49.082735 #49032]  INFO -- : [d0505f05-bcd0-4d59-9978-f40d065596b9] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:23:49 +0530
+I, [2023-08-14T12:23:49.083198 #49032]  INFO -- : [d0505f05-bcd0-4d59-9978-f40d065596b9] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:23:49.135507 #49032]  INFO -- : [d0505f05-bcd0-4d59-9978-f40d065596b9]   Rendered users_account/index.html.slim within layouts/application (Duration: 20.8ms | Allocations: 148)
+I, [2023-08-14T12:23:49.136282 #49032]  INFO -- : [d0505f05-bcd0-4d59-9978-f40d065596b9]   Rendered layout layouts/application.html.slim (Duration: 21.6ms | Allocations: 909)
+I, [2023-08-14T12:23:49.136435 #49032]  INFO -- : [d0505f05-bcd0-4d59-9978-f40d065596b9] Completed 200 OK in 53ms (Views: 1.4ms | ActiveRecord: 34.9ms | Allocations: 1792)
+I, [2023-08-14T12:23:50.112814 #49032]  INFO -- : [30ef45a7-f50f-476b-97f4-b74206acdba2] Started GET "/" for 127.0.0.1 at 2023-08-14 12:23:50 +0530
+I, [2023-08-14T12:23:50.113307 #49032]  INFO -- : [30ef45a7-f50f-476b-97f4-b74206acdba2] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:23:50.256920 #49032]  INFO -- : [30ef45a7-f50f-476b-97f4-b74206acdba2]   Rendered static/dashboard.html.slim within layouts/application (Duration: 80.9ms | Allocations: 1737)
+I, [2023-08-14T12:23:50.257764 #49032]  INFO -- : [30ef45a7-f50f-476b-97f4-b74206acdba2]   Rendered layout layouts/application.html.slim (Duration: 81.8ms | Allocations: 2490)
+I, [2023-08-14T12:23:50.257934 #49032]  INFO -- : [30ef45a7-f50f-476b-97f4-b74206acdba2] Completed 200 OK in 145ms (Views: 4.0ms | ActiveRecord: 124.0ms | Allocations: 3428)
+I, [2023-08-14T12:23:51.641743 #49032]  INFO -- : [c0a0a47f-154c-4efe-a76f-e206f3f21d95] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:51 +0530
+I, [2023-08-14T12:23:51.642409 #49032]  INFO -- : [c0a0a47f-154c-4efe-a76f-e206f3f21d95] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:51.693298 #49032]  INFO -- : [c0a0a47f-154c-4efe-a76f-e206f3f21d95] Completed 200 OK in 51ms (Views: 2.7ms | ActiveRecord: 30.6ms | Allocations: 2597)
+I, [2023-08-14T12:23:51.695125 #49032]  INFO -- : [4d3e5703-f2b2-4062-a8b9-0d365e043483] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:51 +0530
+I, [2023-08-14T12:23:51.695547 #49032]  INFO -- : [4d3e5703-f2b2-4062-a8b9-0d365e043483] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:51.743225 #49032]  INFO -- : [4d3e5703-f2b2-4062-a8b9-0d365e043483] Completed 200 OK in 48ms (Views: 2.6ms | ActiveRecord: 29.6ms | Allocations: 2595)
+I, [2023-08-14T12:23:51.744988 #49032]  INFO -- : [1472c778-74d5-4ea6-9e0a-e1a6807f877e] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:51 +0530
+I, [2023-08-14T12:23:51.745444 #49032]  INFO -- : [1472c778-74d5-4ea6-9e0a-e1a6807f877e] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:51.794631 #49032]  INFO -- : [1472c778-74d5-4ea6-9e0a-e1a6807f877e] Completed 200 OK in 49ms (Views: 2.8ms | ActiveRecord: 29.7ms | Allocations: 2595)
+I, [2023-08-14T12:23:51.796607 #49032]  INFO -- : [12839631-74e5-4ab4-9131-894294a7e82e] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:23:51 +0530
+I, [2023-08-14T12:23:51.797176 #49032]  INFO -- : [12839631-74e5-4ab4-9131-894294a7e82e] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:23:51.845955 #49032]  INFO -- : [12839631-74e5-4ab4-9131-894294a7e82e] Completed 200 OK in 49ms (Views: 2.6ms | ActiveRecord: 29.9ms | Allocations: 2595)
+I, [2023-08-14T12:24:00.805305 #49032]  INFO -- : [39bc9523-e700-49b4-a444-f8c9cab908c8] Started POST "/expense" for 127.0.0.1 at 2023-08-14 12:24:00 +0530
+I, [2023-08-14T12:24:00.805836 #49032]  INFO -- : [39bc9523-e700-49b4-a444-f8c9cab908c8] Processing by ExpenseController#create as HTML
+I, [2023-08-14T12:24:00.805881 #49032]  INFO -- : [39bc9523-e700-49b4-a444-f8c9cab908c8]   Parameters: {"authenticity_token"=>"[FILTERED]", "expense"=>{"description"=>"checking updates", "amount"=>"1000", "incurred_by_id"=>"1", "exp_date"=>"", "borrowers_attributes"=>{"1691996037062"=>{"borrower_id"=>"1", "amount"=>"500.00", "_destroy"=>"false"}, "1691996037907"=>{"borrower_id"=>"2", "amount"=>"500.00", "_destroy"=>"false"}}}}
+I, [2023-08-14T12:24:01.152913 #49032]  INFO -- : [39bc9523-e700-49b4-a444-f8c9cab908c8] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T12:24:01.153026 #49032]  INFO -- : [39bc9523-e700-49b4-a444-f8c9cab908c8] Completed 302 Found in 347ms (ActiveRecord: 298.6ms | Allocations: 13916)
+I, [2023-08-14T12:24:01.155367 #49032]  INFO -- : [045cc216-573b-4b48-9a3e-9e16d1c796a7] Started GET "/" for 127.0.0.1 at 2023-08-14 12:24:01 +0530
+I, [2023-08-14T12:24:01.155714 #49032]  INFO -- : [045cc216-573b-4b48-9a3e-9e16d1c796a7] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:24:01.322024 #49032]  INFO -- : [045cc216-573b-4b48-9a3e-9e16d1c796a7]   Rendered static/dashboard.html.slim within layouts/application (Duration: 101.8ms | Allocations: 2206)
+I, [2023-08-14T12:24:01.322780 #49032]  INFO -- : [045cc216-573b-4b48-9a3e-9e16d1c796a7]   Rendered layout layouts/application.html.slim (Duration: 102.5ms | Allocations: 2964)
+I, [2023-08-14T12:24:01.322936 #49032]  INFO -- : [045cc216-573b-4b48-9a3e-9e16d1c796a7] Completed 200 OK in 167ms (Views: 4.7ms | ActiveRecord: 146.0ms | Allocations: 3931)
+I, [2023-08-14T12:24:03.162113 #49032]  INFO -- : [18509c69-3fd9-409d-86f3-010a7cda89c9] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:24:03 +0530
+I, [2023-08-14T12:24:03.162653 #49032]  INFO -- : [18509c69-3fd9-409d-86f3-010a7cda89c9] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:24:03.225804 #49032]  INFO -- : [18509c69-3fd9-409d-86f3-010a7cda89c9]   Rendered users_account/index.html.slim within layouts/application (Duration: 31.8ms | Allocations: 669)
+I, [2023-08-14T12:24:03.226471 #49032]  INFO -- : [18509c69-3fd9-409d-86f3-010a7cda89c9]   Rendered layout layouts/application.html.slim (Duration: 32.4ms | Allocations: 1418)
+I, [2023-08-14T12:24:03.226614 #49032]  INFO -- : [18509c69-3fd9-409d-86f3-010a7cda89c9] Completed 200 OK in 64ms (Views: 2.3ms | ActiveRecord: 45.5ms | Allocations: 2310)
+I, [2023-08-14T12:24:04.664578 #49032]  INFO -- : [0a1f7ea8-e69f-4811-975b-420e9f63e070] Started GET "/" for 127.0.0.1 at 2023-08-14 12:24:04 +0530
+I, [2023-08-14T12:24:04.665074 #49032]  INFO -- : [0a1f7ea8-e69f-4811-975b-420e9f63e070] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:24:04.829795 #49032]  INFO -- : [0a1f7ea8-e69f-4811-975b-420e9f63e070]   Rendered static/dashboard.html.slim within layouts/application (Duration: 93.0ms | Allocations: 2019)
+I, [2023-08-14T12:24:04.830494 #49032]  INFO -- : [0a1f7ea8-e69f-4811-975b-420e9f63e070]   Rendered layout layouts/application.html.slim (Duration: 93.7ms | Allocations: 2777)
+I, [2023-08-14T12:24:04.830643 #49032]  INFO -- : [0a1f7ea8-e69f-4811-975b-420e9f63e070] Completed 200 OK in 166ms (Views: 4.4ms | ActiveRecord: 136.5ms | Allocations: 3717)
+I, [2023-08-14T12:24:08.096736 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7] Started GET "/people/1" for 127.0.0.1 at 2023-08-14 12:24:08 +0530
+I, [2023-08-14T12:24:08.097239 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7] Processing by StaticController#person as HTML
+I, [2023-08-14T12:24:08.097285 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7]   Parameters: {"id"=>"1"}
+I, [2023-08-14T12:24:08.278448 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7]   Rendered static/person.html.slim within layouts/application (Duration: 100.0ms | Allocations: 4626)
+I, [2023-08-14T12:24:08.279287 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7]   Rendered layout layouts/application.html.slim (Duration: 100.9ms | Allocations: 5379)
+I, [2023-08-14T12:24:08.279447 #49032]  INFO -- : [33fa4984-0cb8-4866-a30f-1bae89968ed7] Completed 200 OK in 182ms (Views: 5.9ms | ActiveRecord: 157.0ms | Allocations: 6472)
+I, [2023-08-14T12:24:08.733932 #49032]  INFO -- : [7fca987a-c56d-406b-9b73-76cc7a1e9f5f] Started GET "/" for 127.0.0.1 at 2023-08-14 12:24:08 +0530
+I, [2023-08-14T12:24:08.734477 #49032]  INFO -- : [7fca987a-c56d-406b-9b73-76cc7a1e9f5f] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:24:08.945742 #49032]  INFO -- : [7fca987a-c56d-406b-9b73-76cc7a1e9f5f]   Rendered static/dashboard.html.slim within layouts/application (Duration: 127.9ms | Allocations: 2018)
+I, [2023-08-14T12:24:08.946454 #49032]  INFO -- : [7fca987a-c56d-406b-9b73-76cc7a1e9f5f]   Rendered layout layouts/application.html.slim (Duration: 128.7ms | Allocations: 2772)
+I, [2023-08-14T12:24:08.946615 #49032]  INFO -- : [7fca987a-c56d-406b-9b73-76cc7a1e9f5f] Completed 200 OK in 212ms (Views: 4.4ms | ActiveRecord: 190.5ms | Allocations: 3721)
+I, [2023-08-14T12:25:51.375611 #49032]  INFO -- : [297d9b31-c8c9-4342-8fad-e145faa552e4] Started GET "/users_account" for 127.0.0.1 at 2023-08-14 12:25:51 +0530
+I, [2023-08-14T12:25:51.376252 #49032]  INFO -- : [297d9b31-c8c9-4342-8fad-e145faa552e4] Processing by UsersAccountController#index as HTML
+I, [2023-08-14T12:25:51.444710 #49032]  INFO -- : [297d9b31-c8c9-4342-8fad-e145faa552e4]   Rendered users_account/index.html.slim within layouts/application (Duration: 34.0ms | Allocations: 625)
+I, [2023-08-14T12:25:51.445455 #49032]  INFO -- : [297d9b31-c8c9-4342-8fad-e145faa552e4]   Rendered layout layouts/application.html.slim (Duration: 34.8ms | Allocations: 1374)
+I, [2023-08-14T12:25:51.445610 #49032]  INFO -- : [297d9b31-c8c9-4342-8fad-e145faa552e4] Completed 200 OK in 69ms (Views: 2.5ms | ActiveRecord: 50.6ms | Allocations: 2264)
+I, [2023-08-14T12:26:03.261922 #49032]  INFO -- : [f09e14a8-0270-4f82-9870-856c387786ac] Started GET "/" for 127.0.0.1 at 2023-08-14 12:26:03 +0530
+I, [2023-08-14T12:26:03.262387 #49032]  INFO -- : [f09e14a8-0270-4f82-9870-856c387786ac] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:26:03.425803 #49032]  INFO -- : [f09e14a8-0270-4f82-9870-856c387786ac]   Rendered static/dashboard.html.slim within layouts/application (Duration: 94.5ms | Allocations: 2018)
+I, [2023-08-14T12:26:03.426635 #49032]  INFO -- : [f09e14a8-0270-4f82-9870-856c387786ac]   Rendered layout layouts/application.html.slim (Duration: 95.4ms | Allocations: 2771)
+I, [2023-08-14T12:26:03.426790 #49032]  INFO -- : [f09e14a8-0270-4f82-9870-856c387786ac] Completed 200 OK in 164ms (Views: 4.9ms | ActiveRecord: 142.7ms | Allocations: 3729)
+I, [2023-08-14T12:26:03.814473 #49032]  INFO -- : [96886ede-f56a-4578-a515-79eb93613feb] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:03 +0530
+I, [2023-08-14T12:26:03.815021 #49032]  INFO -- : [96886ede-f56a-4578-a515-79eb93613feb] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:03.863165 #49032]  INFO -- : [96886ede-f56a-4578-a515-79eb93613feb] Completed 200 OK in 48ms (Views: 2.4ms | ActiveRecord: 29.7ms | Allocations: 2590)
+I, [2023-08-14T12:26:03.865230 #49032]  INFO -- : [9f798b45-e6d5-4c0c-9755-49224ee417d1] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:03 +0530
+I, [2023-08-14T12:26:03.865709 #49032]  INFO -- : [9f798b45-e6d5-4c0c-9755-49224ee417d1] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:03.914297 #49032]  INFO -- : [9f798b45-e6d5-4c0c-9755-49224ee417d1] Completed 200 OK in 49ms (Views: 2.8ms | ActiveRecord: 29.6ms | Allocations: 2588)
+I, [2023-08-14T12:26:03.916009 #49032]  INFO -- : [b18d0ec1-c2a1-4f96-b2e7-5bb1c1d13e20] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:03 +0530
+I, [2023-08-14T12:26:03.916446 #49032]  INFO -- : [b18d0ec1-c2a1-4f96-b2e7-5bb1c1d13e20] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:03.966157 #49032]  INFO -- : [b18d0ec1-c2a1-4f96-b2e7-5bb1c1d13e20] Completed 200 OK in 50ms (Views: 2.7ms | ActiveRecord: 30.1ms | Allocations: 2588)
+I, [2023-08-14T12:26:03.968198 #49032]  INFO -- : [74cee607-f0cb-4548-b6a0-a369ef7d065b] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:03 +0530
+I, [2023-08-14T12:26:03.968706 #49032]  INFO -- : [74cee607-f0cb-4548-b6a0-a369ef7d065b] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.017659 #49032]  INFO -- : [74cee607-f0cb-4548-b6a0-a369ef7d065b] Completed 200 OK in 49ms (Views: 2.8ms | ActiveRecord: 29.7ms | Allocations: 2588)
+I, [2023-08-14T12:26:04.019605 #49032]  INFO -- : [e93a2318-b104-4ddb-9ee4-e0a9b5ae8ee5] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.020147 #49032]  INFO -- : [e93a2318-b104-4ddb-9ee4-e0a9b5ae8ee5] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.085542 #49032]  INFO -- : [e93a2318-b104-4ddb-9ee4-e0a9b5ae8ee5] Completed 200 OK in 65ms (Views: 2.8ms | ActiveRecord: 43.2ms | Allocations: 2588)
+I, [2023-08-14T12:26:04.087326 #49032]  INFO -- : [9a4dd4f4-a8df-4d84-8183-72eec888de66] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.087771 #49032]  INFO -- : [9a4dd4f4-a8df-4d84-8183-72eec888de66] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.156884 #49032]  INFO -- : [9a4dd4f4-a8df-4d84-8183-72eec888de66] Completed 200 OK in 69ms (Views: 2.8ms | ActiveRecord: 50.4ms | Allocations: 2588)
+I, [2023-08-14T12:26:04.158779 #49032]  INFO -- : [938b9942-2ef1-4884-8acf-0c04dab1f4bc] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.159207 #49032]  INFO -- : [938b9942-2ef1-4884-8acf-0c04dab1f4bc] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.208353 #49032]  INFO -- : [938b9942-2ef1-4884-8acf-0c04dab1f4bc] Completed 200 OK in 49ms (Views: 2.9ms | ActiveRecord: 30.4ms | Allocations: 2592)
+I, [2023-08-14T12:26:04.210042 #49032]  INFO -- : [27772658-a7aa-405f-8e65-0c2539926548] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.210516 #49032]  INFO -- : [27772658-a7aa-405f-8e65-0c2539926548] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.258996 #49032]  INFO -- : [27772658-a7aa-405f-8e65-0c2539926548] Completed 200 OK in 48ms (Views: 2.8ms | ActiveRecord: 29.9ms | Allocations: 2589)
+I, [2023-08-14T12:26:04.260647 #49032]  INFO -- : [2f29b5cb-fbdb-4eb0-aeb0-45668da2153c] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.261042 #49032]  INFO -- : [2f29b5cb-fbdb-4eb0-aeb0-45668da2153c] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.309220 #49032]  INFO -- : [2f29b5cb-fbdb-4eb0-aeb0-45668da2153c] Completed 200 OK in 48ms (Views: 2.5ms | ActiveRecord: 29.7ms | Allocations: 2588)
+I, [2023-08-14T12:26:04.310917 #49032]  INFO -- : [de06c54e-b04d-4c09-bdd0-c495fbfb09b7] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.311325 #49032]  INFO -- : [de06c54e-b04d-4c09-bdd0-c495fbfb09b7] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.360157 #49032]  INFO -- : [de06c54e-b04d-4c09-bdd0-c495fbfb09b7] Completed 200 OK in 49ms (Views: 2.6ms | ActiveRecord: 29.9ms | Allocations: 2588)
+I, [2023-08-14T12:26:04.361921 #49032]  INFO -- : [749c6a26-0bcf-4982-a8d0-d8c39bd6a20a] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:04 +0530
+I, [2023-08-14T12:26:04.362318 #49032]  INFO -- : [749c6a26-0bcf-4982-a8d0-d8c39bd6a20a] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:04.410645 #49032]  INFO -- : [749c6a26-0bcf-4982-a8d0-d8c39bd6a20a] Completed 200 OK in 48ms (Views: 2.5ms | ActiveRecord: 30.1ms | Allocations: 2588)
+I, [2023-08-14T12:26:10.824479 #49032]  INFO -- : [8eff44e4-fbde-4d21-8f30-2e1124a5999d] Started POST "/expense" for 127.0.0.1 at 2023-08-14 12:26:10 +0530
+I, [2023-08-14T12:26:10.824982 #49032]  INFO -- : [8eff44e4-fbde-4d21-8f30-2e1124a5999d] Processing by ExpenseController#create as HTML
+I, [2023-08-14T12:26:10.825018 #49032]  INFO -- : [8eff44e4-fbde-4d21-8f30-2e1124a5999d]   Parameters: {"authenticity_token"=>"[FILTERED]", "expense"=>{"description"=>"checking updates 3", "amount"=>"-123", "incurred_by_id"=>"1", "exp_date"=>"", "borrowers_attributes"=>{"1691996168692"=>{"borrower_id"=>"1", "amount"=>"-61.50", "_destroy"=>"false"}, "1691996169184"=>{"borrower_id"=>"1", "amount"=>"-61.50", "_destroy"=>"false"}}}}
+I, [2023-08-14T12:26:10.990101 #49032]  INFO -- : [8eff44e4-fbde-4d21-8f30-2e1124a5999d] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T12:26:10.990208 #49032]  INFO -- : [8eff44e4-fbde-4d21-8f30-2e1124a5999d] Completed 302 Found in 165ms (ActiveRecord: 145.8ms | Allocations: 2896)
+I, [2023-08-14T12:26:10.992804 #49032]  INFO -- : [e96ac29f-39a3-45e5-9478-3e35076a92c0] Started GET "/" for 127.0.0.1 at 2023-08-14 12:26:10 +0530
+I, [2023-08-14T12:26:10.993135 #49032]  INFO -- : [e96ac29f-39a3-45e5-9478-3e35076a92c0] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:26:11.178085 #49032]  INFO -- : [e96ac29f-39a3-45e5-9478-3e35076a92c0]   Rendered static/dashboard.html.slim within layouts/application (Duration: 112.8ms | Allocations: 2020)
+I, [2023-08-14T12:26:11.178862 #49032]  INFO -- : [e96ac29f-39a3-45e5-9478-3e35076a92c0]   Rendered layout layouts/application.html.slim (Duration: 113.6ms | Allocations: 2777)
+I, [2023-08-14T12:26:11.179029 #49032]  INFO -- : [e96ac29f-39a3-45e5-9478-3e35076a92c0] Completed 200 OK in 186ms (Views: 4.4ms | ActiveRecord: 165.0ms | Allocations: 3740)
+I, [2023-08-14T12:26:17.127573 #49032]  INFO -- : [a82e1cc7-16f0-451c-8cc5-76ea31c7596a] Started GET "/expense/new" for 127.0.0.1 at 2023-08-14 12:26:17 +0530
+I, [2023-08-14T12:26:17.128082 #49032]  INFO -- : [a82e1cc7-16f0-451c-8cc5-76ea31c7596a] Processing by ExpenseController#new as HTML
+I, [2023-08-14T12:26:17.175938 #49032]  INFO -- : [a82e1cc7-16f0-451c-8cc5-76ea31c7596a] Completed 200 OK in 48ms (Views: 2.4ms | ActiveRecord: 29.7ms | Allocations: 2582)
+I, [2023-08-14T12:26:29.978975 #49032]  INFO -- : [611ac9ad-bbf9-4d35-ad87-d15cf3e99857] Started POST "/expense" for 127.0.0.1 at 2023-08-14 12:26:29 +0530
+I, [2023-08-14T12:26:29.979469 #49032]  INFO -- : [611ac9ad-bbf9-4d35-ad87-d15cf3e99857] Processing by ExpenseController#create as HTML
+I, [2023-08-14T12:26:29.979524 #49032]  INFO -- : [611ac9ad-bbf9-4d35-ad87-d15cf3e99857]   Parameters: {"authenticity_token"=>"[FILTERED]", "expense"=>{"description"=>"checking updates 3", "amount"=>"123124", "incurred_by_id"=>"2", "exp_date"=>"", "borrowers_attributes"=>{"1691996178406"=>{"borrower_id"=>"1", "amount"=>"61562.00", "_destroy"=>"false"}, "1691996179377"=>{"borrower_id"=>"2", "amount"=>"61562.00", "_destroy"=>"false"}}}}
+I, [2023-08-14T12:26:30.440855 #49032]  INFO -- : [611ac9ad-bbf9-4d35-ad87-d15cf3e99857] Redirected to http://0.0.0.0:3000/
+I, [2023-08-14T12:26:30.440971 #49032]  INFO -- : [611ac9ad-bbf9-4d35-ad87-d15cf3e99857] Completed 302 Found in 461ms (ActiveRecord: 434.4ms | Allocations: 6289)
+I, [2023-08-14T12:26:30.443574 #49032]  INFO -- : [5b44c0bd-2099-4a80-972e-0f9c985a6705] Started GET "/" for 127.0.0.1 at 2023-08-14 12:26:30 +0530
+I, [2023-08-14T12:26:30.443917 #49032]  INFO -- : [5b44c0bd-2099-4a80-972e-0f9c985a6705] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:26:30.651682 #49032]  INFO -- : [5b44c0bd-2099-4a80-972e-0f9c985a6705]   Rendered static/dashboard.html.slim within layouts/application (Duration: 141.8ms | Allocations: 2047)
+I, [2023-08-14T12:26:30.652634 #49032]  INFO -- : [5b44c0bd-2099-4a80-972e-0f9c985a6705]   Rendered layout layouts/application.html.slim (Duration: 142.8ms | Allocations: 2805)
+I, [2023-08-14T12:26:30.652795 #49032]  INFO -- : [5b44c0bd-2099-4a80-972e-0f9c985a6705] Completed 200 OK in 209ms (Views: 4.4ms | ActiveRecord: 186.4ms | Allocations: 3786)
+I, [2023-08-14T12:26:34.360785 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383] Started GET "/people/1" for 127.0.0.1 at 2023-08-14 12:26:34 +0530
+I, [2023-08-14T12:26:34.361375 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383] Processing by StaticController#person as HTML
+I, [2023-08-14T12:26:34.361413 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383]   Parameters: {"id"=>"1"}
+I, [2023-08-14T12:26:34.558584 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383]   Rendered static/person.html.slim within layouts/application (Duration: 130.4ms | Allocations: 2044)
+I, [2023-08-14T12:26:34.559315 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383]   Rendered layout layouts/application.html.slim (Duration: 131.2ms | Allocations: 2801)
+I, [2023-08-14T12:26:34.559482 #49032]  INFO -- : [2774fb7d-bbcf-4665-bafc-ca98c481c383] Completed 200 OK in 198ms (Views: 4.7ms | ActiveRecord: 176.7ms | Allocations: 3765)
+I, [2023-08-14T12:26:38.611958 #49032]  INFO -- : [830c7952-0516-4b04-a714-9e731d2695ca] Started GET "/" for 127.0.0.1 at 2023-08-14 12:26:38 +0530
+I, [2023-08-14T12:26:38.612385 #49032]  INFO -- : [830c7952-0516-4b04-a714-9e731d2695ca] Processing by StaticController#dashboard as HTML
+I, [2023-08-14T12:26:38.998905 #49032]  INFO -- : [830c7952-0516-4b04-a714-9e731d2695ca]   Rendered static/dashboard.html.slim within layouts/application (Duration: 111.2ms | Allocations: 2045)
+I, [2023-08-14T12:26:38.999660 #49032]  INFO -- : [830c7952-0516-4b04-a714-9e731d2695ca]   Rendered layout layouts/application.html.slim (Duration: 112.0ms | Allocations: 2798)
+I, [2023-08-14T12:26:38.999857 #49032]  INFO -- : [830c7952-0516-4b04-a714-9e731d2695ca] Completed 200 OK in 387ms (Views: 4.8ms | ActiveRecord: 268.9ms | Allocations: 3758)
